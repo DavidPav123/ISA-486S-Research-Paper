@@ -1,28 +1,33 @@
-#include <iostream>
 #include <fstream>
-#include <string>
+#include <iostream>
+
+void copyFileCharacterByCharacter(const std::string& sourcePath, const std::string& destinationPath) {
+    // Open the source file for reading
+    std::ifstream sourceFile(sourcePath, std::ifstream::in);
+    // Open the destination file for writing
+    std::ofstream destinationFile(destinationPath, std::ofstream::out);
+
+    if (!sourceFile.is_open() || !destinationFile.is_open()) {
+        std::cerr << "Error opening files!" << std::endl;
+        return;
+    }
+
+    char character;
+    // Read from the source file one character at a time and write to the destination file
+    while (sourceFile.get(character)) {
+        destinationFile << character;
+    }
+
+    // Close the files
+    sourceFile.close();
+    destinationFile.close();
+}
 
 int main() {
-    std::ifstream sourceFile("/workspaces/Rusty-Kernels-Code/read-write/source.txt");
-    std::ofstream destFile("/workspaces/Rusty-Kernels-Code/read-write/destination.txt");
+    std::string sourcePath = "/workspaces/ISA-486S-Research-Paper/read-write/source.txt";
+    std::string destinationPath = "/workspaces/ISA-486S-Research-Paper/read-write/destination.txt";
 
-    if (!sourceFile.is_open()) {
-        std::cerr << "Unable to open source file.\n";
-        return EXIT_FAILURE;
-    }
-
-    if (!destFile.is_open()) {
-        std::cerr << "Unable to open destination file.\n";
-        return EXIT_FAILURE;
-    }
-
-    std::string line;
-    while (std::getline(sourceFile, line)) {
-        destFile << line;
-    }
-
-    sourceFile.close();
-    destFile.close();
+    copyFileCharacterByCharacter(sourcePath, destinationPath);
 
     return 0;
 }

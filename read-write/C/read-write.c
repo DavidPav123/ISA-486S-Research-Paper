@@ -1,46 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void copyFileCharacterByCharacter(const char* sourcePath, const char* destinationPath) {
+    // Open the source file for reading
+    FILE* sourceFile = fopen(sourcePath, "r");
+    if (sourceFile == NULL) {
+        perror("Error opening source file");
+        exit(EXIT_FAILURE);
+    }
+
+    // Open the destination file for writing
+    FILE* destinationFile = fopen(destinationPath, "w");
+    if (destinationFile == NULL) {
+        fclose(sourceFile); // Make sure to close sourceFile before exiting
+        perror("Error opening destination file");
+        exit(EXIT_FAILURE);
+    }
+
+    int ch; // To store each character read from the source file
+
+    // Read from the source file character by character and write to the destination file
+    while ((ch = fgetc(sourceFile)) != EOF) {
+        fputc(ch, destinationFile);
+    }
+
+    // Close both files
+    fclose(sourceFile);
+    fclose(destinationFile);
+}
+
 int main() {
-    char* source = NULL;
-    FILE* sourceFile = fopen("/workspaces/Rusty-Kernels-Code/read-write/source.txt", "r");
-    FILE* destFile = fopen("/workspaces/Rusty-Kernels-Code/read-write/destination.txt", "w");
+    const char* sourcePath = "/workspaces/ISA-486S-Research-Paper/read-write/source.txt";
+    const char* destinationPath = "/workspaces/ISA-486S-Research-Paper/read-write/destination.txt";
 
-    if (sourceFile != NULL && destFile != NULL) {
-        /* Go to the end of the file. */
-        if (fseek(sourceFile, 0L, SEEK_END) == 0) {
-            /* Get the size of the file. */
-            long bufsize = ftell(sourceFile);
-            if (bufsize == -1) { /* Error */ }
-
-            /* Allocate our buffer to that size. */
-            source = malloc(sizeof(char) * (bufsize + 1));
-
-            /* Go back to the start of the file. */
-            if (fseek(sourceFile, 0L, SEEK_SET) != 0) { /* Error */ }
-
-            /* Read the entire file into memory. */
-            size_t newLen = fread(source, sizeof(char), bufsize, sourceFile);
-            if (ferror(sourceFile) != 0) {
-                fputs("Error reading file", stderr);
-            }
-            else {
-                source[newLen++] = '\0'; /* Just to be safe. */
-
-                // Write to the destination file
-                fwrite(source, sizeof(char), newLen, destFile);
-            }
-        }
-        fclose(sourceFile);
-        fclose(destFile); // Close the destination file
-    }
-    else {
-        printf("Source or destination file could not be found");
-    }
-
-    if (source != NULL) {
-        free(source); // Free the allocated memory
-    }
+    copyFileCharacterByCharacter(sourcePath, destinationPath);
 
     return 0;
 }
