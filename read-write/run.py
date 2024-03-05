@@ -69,6 +69,7 @@ for path in paths:
     write_averages(joined_results, path[1])"""
 
     for i in range(5):
+        print(f"Run {i}")
         with open("/workspaces/ISA-486S-Research-Paper/read-write/destination.txt", 'w'):
             pass  # Pass is a no-operation statement, so it effectively does nothing
         subprocess.call(
