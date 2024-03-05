@@ -1,35 +1,29 @@
 use std::fs::File;
 use std::io::{self, Read, Write};
 
-fn copy_file_char_by_char(src: &str, dst: &str) -> io::Result<()> {
-    // Open the source file for reading
-    let mut src_file = File::open(src)?;
+fn copy_file(source_path: &str, destination_path: &str) -> io::Result<()> {
+    let mut source_file = File::open(source_path)?;
+    let mut destination_file = File::create(destination_path)?;
 
-    // Create the destination file for writing
-    let mut dst_file = File::create(dst)?;
+    let mut buffer = [0; 4096]; // Buffer of 4096 bytes
 
-    // Buffer to hold the character read from the source file
-    let mut buffer = [0; 1];
-
-    // Read each character from the source file and write to the destination file
-    while let Ok(bytes_read) = src_file.read(&mut buffer) {
+    // Read from source and write to destination in chunks of 4096 bytes
+    while let Ok(bytes_read) = source_file.read(&mut buffer) {
         if bytes_read == 0 {
-            // End of file reached
-            break;
+            break; // End of file reached
         }
-        // Write the character to the destination file
-        dst_file.write_all(&buffer)?;
+        destination_file.write_all(&buffer[..bytes_read])?;
     }
 
     Ok(())
 }
 
 fn main() {
-    let src_path = "/workspaces/ISA-486S-Research-Paper/read-write/source.txt";
-    let dst_path = "/workspaces/ISA-486S-Research-Paper/read-write/destination.txt";
+    let source = "/workspaces/ISA-486S-Research-Paper/read-write/source.txt";
+    let destination = "/workspaces/ISA-486S-Research-Paper/read-write/destination.txt";
 
-    match copy_file_char_by_char(src_path, dst_path) {
+    match copy_file(source, destination) {
         Ok(_) => (),
-        Err(e) => eprintln!("Failed to copy file: {}", e),
+        Err(e) => eprintln!("Error copying file: {}", e),
     }
 }

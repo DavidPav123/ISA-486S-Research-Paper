@@ -1,39 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void copyFileCharacterByCharacter(const char* sourcePath, const char* destinationPath) {
+#define BUFFER_SIZE 4096
+
+int main() {
+    char buffer[BUFFER_SIZE];
+    size_t bytes;
+
     // Open the source file for reading
-    FILE* sourceFile = fopen(sourcePath, "r");
+    FILE* sourceFile = fopen("/workspaces/ISA-486S-Research-Paper/read-write/source.txt", "rb");
     if (sourceFile == NULL) {
         perror("Error opening source file");
-        exit(EXIT_FAILURE);
+        return 1;
     }
 
     // Open the destination file for writing
-    FILE* destinationFile = fopen(destinationPath, "w");
-    if (destinationFile == NULL) {
-        fclose(sourceFile); // Make sure to close sourceFile before exiting
+    FILE* destFile = fopen("/workspaces/ISA-486S-Research-Paper/read-write/destination.txt", "wb");
+    if (destFile == NULL) {
         perror("Error opening destination file");
-        exit(EXIT_FAILURE);
+        fclose(sourceFile); // Close the source file before exiting
+        return 1;
     }
 
-    int ch; // To store each character read from the source file
-
-    // Read from the source file character by character and write to the destination file
-    while ((ch = fgetc(sourceFile)) != EOF) {
-        fputc(ch, destinationFile);
+    // Read from source and write to destination in chunks of BUFFER_SIZE
+    while ((bytes = fread(buffer, 1, BUFFER_SIZE, sourceFile)) > 0) {
+        if (fwrite(buffer, 1, bytes, destFile) != bytes) {
+            perror("Error writing to destination file");
+            fclose(sourceFile);
+            fclose(destFile);
+            return 1;
+        }
     }
 
-    // Close both files
+    // Close the files
     fclose(sourceFile);
-    fclose(destinationFile);
-}
-
-int main() {
-    const char* sourcePath = "/workspaces/ISA-486S-Research-Paper/read-write/source.txt";
-    const char* destinationPath = "/workspaces/ISA-486S-Research-Paper/read-write/destination.txt";
-
-    copyFileCharacterByCharacter(sourcePath, destinationPath);
+    fclose(destFile);
 
     return 0;
 }

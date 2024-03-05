@@ -1,39 +1,45 @@
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class readwrite {
     public static void main(String[] args) {
-        String sourceFile = "/workspaces/ISA-486S-Research-Paper/read-write/source.txt"; 
-        String destinationFile = "/workspaces/ISA-486S-Research-Paper/read-write/destination.txt"; 
+        String sourceFile = "/workspaces/ISA-486S-Research-Paper/read-write/source.txt"; // Source file path
+        String destinationFile = "/workspaces/ISA-486S-Research-Paper/read-write/destination.txt"; // Destination file
+                                                                                                   // path
 
-        FileReader reader = null;
-        FileWriter writer = null;
+        FileInputStream inputStream = null;
+        FileOutputStream outputStream = null;
+        byte[] buffer = new byte[4096]; // Buffer of 4096 bytes
 
         try {
-            reader = new FileReader(sourceFile);
-            writer = new FileWriter(destinationFile);
+            inputStream = new FileInputStream(sourceFile);
+            outputStream = new FileOutputStream(destinationFile);
 
-            int character;
+            int bytesRead;
 
-            // Read and write one character at a time
-            while ((character = reader.read()) != -1) {
-                writer.write(character);
+            // Read from source and write to destination in chunks of 4096 bytes
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, bytesRead);
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            // Close the resources in the finally block to ensure they are closed even if an exception occurs
-            try {
-                if (reader != null) {
-                    reader.close();
+            // Close the streams to release system resources
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                if (writer != null) {
-                    writer.close();
+            }
+            if (outputStream != null) {
+                try {
+                    outputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-            } catch (IOException ex) {
-                ex.printStackTrace();
             }
         }
     }

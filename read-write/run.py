@@ -46,8 +46,13 @@ paths = [
     ],
 ]
 for path in paths:
-    results_arr = []
+    """results_arr = []
     for i in range(5):
+        print(f"Run {i}")
+        with open(
+            "/workspaces/ISA-486S-Research-Paper/read-write/destination.txt", "w"
+        ):
+            pass  # Pass is a no-operation statement, so it effectively does nothing
         result = subprocess.run(
             f"time ({path[0]})",
             shell=True,
@@ -58,14 +63,19 @@ for path in paths:
         )
         results_arr.append(result.stderr)
         os.remove("/workspaces/ISA-486S-Research-Paper/read-write/destination.txt")
+        print(f"Finished Run {i}")
 
     joined_results = "".join(results_arr)
-    write_averages(joined_results, path[1])
+    write_averages(joined_results, path[1])"""
 
-    """for i in range(5):
+    for i in range(5):
+        with open("/workspaces/ISA-486S-Research-Paper/read-write/destination.txt", 'w'):
+            pass  # Pass is a no-operation statement, so it effectively does nothing
         subprocess.call(
             f'valgrind --tool=massif --massif-out-file="{path[1]}/massif{i}.txt" --pages-as-heap=yes {path[0]}',
             shell=True,
             executable="/bin/bash",
             stdout=subprocess.PIPE,
-        )"""
+        )
+        os.remove("/workspaces/ISA-486S-Research-Paper/read-write/destination.txt")
+        print(f"Finished Run {i}")

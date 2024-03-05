@@ -1,0 +1,31 @@
+real	0m0.857s
+user	0m0.172s
+sys	0m0.359s
+Sum of user and sys time: 0.531s
+
+
+real	0m1.044s
+user	0m0.156s
+sys	0m0.431s
+Sum of user and sys time: 0.587s
+
+
+real	0m0.964s
+user	0m0.208s
+sys	0m0.358s
+Sum of user and sys time: 0.566s
+
+
+real	0m1.308s
+user	0m0.166s
+sys	0m0.401s
+Sum of user and sys time: 0.567s
+
+
+real	0m1.105s
+user	0m0.183s
+sys	0m0.365s
+Sum of user and sys time: 0.548s
+
+
+Average of user and sys times across all outputs: 0.560s
