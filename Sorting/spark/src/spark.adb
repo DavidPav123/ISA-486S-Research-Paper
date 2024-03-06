@@ -4,7 +4,7 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 procedure Spark is
     type Integer_Array is array (Natural range <>) of Integer;
     File : File_Type;
-    Numbers : Integer_Array (1 .. 100000); -- Adjust size as needed
+    Numbers : Integer_Array (1 .. 1000000); -- Adjust size as needed
     Count : Natural := 0;
 
     function Merge (Left, Right : Integer_Array) return Integer_Array is

@@ -13,11 +13,11 @@ paths = [
     ],
     [
         "/workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust",
-        "/workspaces/ISA-486S-Research-Paper/Sorting/rust/Reults",
+        "/workspaces/ISA-486S-Research-Paper/Sorting/rust/Results",
     ],
     [
-        "/workspaces/ISA-486S-Research-Paper/read-write/spark/bin/spark",
-        "/workspaces/ISA-486S-Research-Paper/read-write/spark/Results",
+        "/workspaces/ISA-486S-Research-Paper/Sorting/spark/bin/spark",
+        "/workspaces/ISA-486S-Research-Paper/Sorting/spark/Results",
     ],
     [
         "java -cp /workspaces/ISA-486S-Research-Paper/Sorting/Java/ Sorting",
@@ -25,11 +25,11 @@ paths = [
     ],
 ]
 for path in paths:
-    """results_arr = []
+    results_arr = []
     for i in range(5):
         print(f"Run {i}")
         result = subprocess.run(
-            f"time ({path[0]})",
+            f"time (({path[0]}) 1> /dev/null)",
             shell=True,
             executable="/bin/bash",
             stdout=subprocess.PIPE,
@@ -37,10 +37,9 @@ for path in paths:
             text=True,
         )
         results_arr.append(result.stderr)
-        os.remove("/workspaces/ISA-486S-Research-Paper/read-write/destination.txt")
 
     joined_results = "".join(results_arr)
-    write_averages(joined_results, path[1])"""
+    write_averages(joined_results, path[1])
 
     for i in range(5):
         print(f"Run {i}")
@@ -50,4 +49,3 @@ for path in paths:
             executable="/bin/bash",
             stdout=subprocess.PIPE,
         )
-        os.remove("/workspaces/ISA-486S-Research-Paper/read-write/destination.txt")

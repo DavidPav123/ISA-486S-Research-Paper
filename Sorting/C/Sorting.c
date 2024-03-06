@@ -67,7 +67,7 @@ void sortFromFile(char* filename) {
         return;
     }
 
-    int arr[1000000]; // Assuming the file has 10000 integers
+    int arr[1000000];
     int num, i = 0;
 
     while (fscanf(file, "%d,", &num) > 0 && i < 10000) {

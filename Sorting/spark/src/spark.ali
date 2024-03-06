@@ -12,7 +12,7 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV SPARK_05
 
-U spark%b		spark.adb		c2ac8b51 NE OO SU
+U spark%b		spark.adb		8ac1077d NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
@@ -31,7 +31,7 @@ D a-tiinio.ads		20210601075304 aa04e5d6 ada.text_io.integer_io%s
 D a-unccon.ads		20210601075304 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210601075304 5ab55268 interfaces%s
 D i-cstrea.ads		20210601075304 e53d8b8e interfaces.c_streams%s
-D spark.adb		20240306030121 bcfab1af spark%b
+D spark.adb		20240306062432 f4973d83 spark%b
 D system.ads		20210601075304 4635ec04 system%s
 D s-crtl.ads		20210601075304 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210601075304 54135002 system.exception_table%s
@@ -52,29 +52,29 @@ X 3 a-inteio.ads
 X 7 a-textio.ads
 49K13*Text_IO 471e16 12|1w10 1r27
 52P9*File_Type 12|6r12
-53n23*In_File{53E9} 12|38r17
-92U14*Open 12|38s5
-166U14*New_Line 12|54s9
-183V13*End_Of_File{boolean} 12|40s15
+53n23*In_File{53E9} 12|53r17
+92U14*Open 12|53s5
+166U14*New_Line 12|69s9
+183V13*End_Of_File{boolean} 12|55s15
 X 8 a-tiinio.ads
-51U14*Get 12|44s13[3|18]
-66U14*Put 12|53s9[3|18]
+51U14*Get 12|59s13[3|18]
+66U14*Put 12|68s9[3|18]
 X 12 spark.adb
-4U11*Spark 4b11 56l5 56t10
-5A10 Integer_Array(integer)<integer> 7r15 10r35 10r57 11r18 27r32 27r54
-6p5 File{7|52P9} 38m11 38r11 40r28 44r18
-7a5 Numbers{5A10} 46m13 50m5 50r41 52r19
-8i5 Count{natural} 45m13 45r22 46r22 50r19 50r55 52r33
-10V14 Merge{5A10} 10b14 10>21 10>27 25l9 25t14 33s20
-10a21 Left{5A10} 11r38 12r24 16r21 16r59 17r31
-10a27 Right{5A10} 11r52 13r24 16r40 16r71 20r31
-11a9 Result{5A10} 15r18 17m17 20m17 24r16
-12i9 L{natural} 16r16 16r65 17r37 18m17 18r22
-13i9 R{natural} 16r36 16r78 20r38 21m17 21r22
-15i13 I{integer} 17r25 20r25
-27V14 Merge_Sort{5A10} 27b14 27>26 33s27 33s80 35l9 35t19 50s29
-27a26 Arr{5A10} 28r35 30r12 31r20 33r39 33r44 33r57 33r92 33r97 33r116
-28i9 Mid{natural} 33r69 33r109
-42i13 Number{integer} 44m24 46r32
-52i9 Number=52:9{integer} 53r14
+4U11*Spark 4b11 71l5 71t10
+5A10 Integer_Array(integer)<integer> 7r15 10r35 10r57 11r18 42r32 42r54
+6p5 File{7|52P9} 53m11 53r11 55r28 59r18
+7a5 Numbers{5A10} 61m13 65m5 65r41 67r19
+8i5 Count{natural} 60m13 60r22 61r22 65r19 65r55 67r33
+10V14 Merge{5A10} 10b14 10>21 10>27 40l9 40t14 48s20
+10a21 Left{5A10} 11r38 12r24 16r20 17r16 18r31 27r20 28r27
+10a27 Right{5A10} 11r52 13r24 16r39 17r28 21r31 33r20 34r27
+11a9 Result{5A10} 14r24 18m17 21m17 28m13 34m13 39r16
+12i9 L{natural} 16r15 17r22 18r37 19m17 19r22 27r15 28r33 29m13 29r18
+13i9 R{natural} 16r34 17r35 21r38 22m17 22r22 33r15 34r34 35m13 35r18
+14i9 I{natural} 18r25 21r25 24m13 24r18 28r21 30m13 30r18 34r21 36m13 36r18
+42V14 Merge_Sort{5A10} 42b14 42>26 48s27 48s80 50l9 50t19 65s29
+42a26 Arr{5A10} 43r35 45r12 46r20 48r39 48r44 48r57 48r92 48r97 48r116
+43i9 Mid{natural} 48r69 48r109
+57i13 Number{integer} 59m24 61r32
+67i9 Number=67:9{integer} 68r14
 

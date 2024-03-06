@@ -1,0 +1,1065 @@
+desc: --massif-out-file=/workspaces/ISA-486S-Research-Paper/Sorting/C++/Results/massif4.txt --pages-as-heap=yes
+cmd: /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=8192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=0
+mem_heap_B=16384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=0
+mem_heap_B=20480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=0
+mem_heap_B=28672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=0
+mem_heap_B=32768
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=0
+mem_heap_B=176128
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=0
+mem_heap_B=208896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=0
+mem_heap_B=217088
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=0
+mem_heap_B=221184
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=0
+mem_heap_B=225280
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n1: 225280 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 225280 0x0: ???
+#-----------
+snapshot=10
+#-----------
+time=0
+mem_heap_B=229376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=0
+mem_heap_B=245760
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=0
+mem_heap_B=249856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=0
+mem_heap_B=253952
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=0
+mem_heap_B=253952
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 253952 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 249856 0x0: ???
+ n0: 4096 0x4001100: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+#-----------
+snapshot=15
+#-----------
+time=0
+mem_heap_B=249856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=0
+mem_heap_B=249856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=59052
+mem_heap_B=270336
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=59128
+mem_heap_B=274432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=59178
+mem_heap_B=278528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=59225
+mem_heap_B=286720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=62003
+mem_heap_B=327680
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=64057
+mem_heap_B=335872
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=64992
+mem_heap_B=2310144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=65086
+mem_heap_B=3297280
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3297280 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 3047424 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 3047424 0x401F186: mmap (mmap64.c:47)
+   n1: 1994752 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 1994752 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1994752 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 1974272 0x400F514: openaux (dl-deps.c:64)
+       n1: 1974272 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 1974272 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 1974272 0x4004063: dl_main (rtld.c:1805)
+          n1: 1974272 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 1974272 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 1974272 0x400204B: _dl_start (rtld.c:539)
+             n0: 1974272 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 1003520 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 1003520 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 1003520 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 987136 0x400F514: openaux (dl-deps.c:64)
+       n1: 987136 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 987136 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 987136 0x4004063: dl_main (rtld.c:1805)
+          n1: 987136 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 987136 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 987136 0x400204B: _dl_start (rtld.c:539)
+             n0: 987136 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 249856 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=65136
+mem_heap_B=3596288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=65183
+mem_heap_B=3653632
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=65670
+mem_heap_B=3665920
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=70556
+mem_heap_B=3776512
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=70632
+mem_heap_B=3850240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=70682
+mem_heap_B=3866624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=70729
+mem_heap_B=3874816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=75516
+mem_heap_B=5914624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=75573
+mem_heap_B=7454720
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=75623
+mem_heap_B=7774208
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7774208 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 7524352 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 7524352 0x401F186: mmap (mmap64.c:47)
+   n1: 4145152 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 4145152 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4145152 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4124672 0x400F514: openaux (dl-deps.c:64)
+       n1: 4124672 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4124672 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4124672 0x4004063: dl_main (rtld.c:1805)
+          n1: 4124672 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4124672 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4124672 0x400204B: _dl_start (rtld.c:539)
+             n0: 4124672 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 3317760 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 3317760 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 3317760 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 3301376 0x400F514: openaux (dl-deps.c:64)
+       n1: 3301376 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 3301376 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 3301376 0x4004063: dl_main (rtld.c:1805)
+          n1: 3301376 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 3301376 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 3301376 0x400204B: _dl_start (rtld.c:539)
+             n0: 3301376 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 61440 in 3 places, all below massif's threshold (1.00%)
+ n0: 249856 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=75670
+mem_heap_B=7798784
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=75989
+mem_heap_B=7815168
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=80987
+mem_heap_B=9187328
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=81063
+mem_heap_B=9871360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=81113
+mem_heap_B=10498048
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=81160
+mem_heap_B=10506240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=101469
+mem_heap_B=10514432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=510839
+mem_heap_B=10522624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2258655
+mem_heap_B=10522624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 10522624 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10272768 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10272768 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 94208 in 3 places, all below massif's threshold (1.00%)
+ n0: 249856 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=2258655
+mem_heap_B=10518528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2340972
+mem_heap_B=10616832
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=18991355
+mem_heap_B=10764288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=68533778
+mem_heap_B=10899456
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=68599668
+mem_heap_B=10899456
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10899456 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 282624 0x4B524AB: brk (brk.c:31)
+  n1: 282624 0x4B52590: __sbrk (sbrk.c:56)
+   n1: 282624 0x4B52590: sbrk (sbrk.c:31)
+    n1: 282624 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 282624 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 282624 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 147456 0x4AD8153: malloc (malloc.c:3058)
+        n1: 147456 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 147456 0x10B3B5: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+          n1: 147456 0x10B23C: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+           n0: 147456 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+       n1: 135168 0x4AD697A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4AD7C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4AD7C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4AD7C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x48E7A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n0: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n0: 249856 0x0: ???
+ n1: 135168 0x4B56B06: __mmap64 (mmap64.c:59)
+  n1: 135168 0x4B56B06: mmap (mmap64.c:47)
+   n1: 135168 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 135168 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 135168 0x4AD8153: malloc (malloc.c:3058)
+      n1: 135168 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 135168 0x10B3B5: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+        n1: 135168 0x10B23C: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+         n0: 135168 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=68599668
+mem_heap_B=10895360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=134590448
+mem_heap_B=11100160
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=134721706
+mem_heap_B=11100160
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11100160 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 401408 0x4B56B06: __mmap64 (mmap64.c:59)
+  n1: 401408 0x4B56B06: mmap (mmap64.c:47)
+   n1: 401408 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 401408 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 401408 0x4AD8153: malloc (malloc.c:3058)
+      n1: 401408 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 401408 0x10B3B5: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+        n1: 401408 0x10B23C: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+         n0: 401408 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+ n0: 249856 0x0: ???
+ n1: 217088 0x4B524AB: brk (brk.c:31)
+  n1: 217088 0x4B52590: __sbrk (sbrk.c:56)
+   n1: 217088 0x4B52590: sbrk (sbrk.c:31)
+    n1: 217088 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 217088 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 217088 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x4AD697A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4AD7C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4AD7C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4AD7C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x48E7A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n0: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 81920 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=134721706
+mem_heap_B=11096064
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=266703965
+mem_heap_B=11493376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=266966293
+mem_heap_B=11493376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 11493376 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 794624 0x4B56B06: __mmap64 (mmap64.c:59)
+  n1: 794624 0x4B56B06: mmap (mmap64.c:47)
+   n1: 794624 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 794624 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 794624 0x4AD8153: malloc (malloc.c:3058)
+      n1: 794624 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 794624 0x10B3B5: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+        n1: 794624 0x10B23C: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+         n0: 794624 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+ n0: 249856 0x0: ???
+ n1: 217088 0x4B524AB: brk (brk.c:31)
+  n1: 217088 0x4B52590: __sbrk (sbrk.c:56)
+   n1: 217088 0x4B52590: sbrk (sbrk.c:31)
+    n1: 217088 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 217088 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 217088 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x4AD697A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4AD7C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4AD7C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4AD7C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x48E7A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n0: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 81920 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=266966293
+mem_heap_B=11489280
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=530930826
+mem_heap_B=12279808
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=531455298
+mem_heap_B=12279808
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 12279808 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 1581056 0x4B56B06: __mmap64 (mmap64.c:59)
+  n1: 1581056 0x4B56B06: mmap (mmap64.c:47)
+   n1: 1581056 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 1581056 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 1581056 0x4AD8153: malloc (malloc.c:3058)
+      n1: 1581056 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1581056 0x10B3B5: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+        n1: 1581056 0x10B23C: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+         n0: 1581056 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+ n0: 249856 0x0: ???
+ n1: 217088 0x4B524AB: brk (brk.c:31)
+  n1: 217088 0x4B52590: __sbrk (sbrk.c:56)
+   n1: 217088 0x4B52590: sbrk (sbrk.c:31)
+    n1: 217088 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 217088 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 217088 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x4AD697A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x4AD7C0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x4AD7C0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x4AD7C0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x48E7A69: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+            n1: 135168 0x4011B99: call_init.part.0 (dl-init.c:72)
+             n1: 135168 0x4011CA0: call_init (dl-init.c:30)
+              n1: 135168 0x4011CA0: _dl_init (dl-init.c:119)
+               n0: 135168 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+       n0: 81920 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=531455298
+mem_heap_B=12275712
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1059378670
+mem_heap_B=13852672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1059518120
+mem_heap_B=13852672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 13852672 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 3153920 0x4B56B06: __mmap64 (mmap64.c:59)
+  n1: 3153920 0x4B56B06: mmap (mmap64.c:47)
+   n1: 3153920 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 3153920 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 3153920 0x4AD8153: malloc (malloc.c:3058)
+      n1: 3153920 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 3153920 0x10B3B5: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+        n1: 3153920 0x10B23C: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+         n0: 3153920 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+ n0: 249856 0x0: ???
+ n1: 217088 0x4B524AB: brk (brk.c:31)
+  n1: 217088 0x4B52590: __sbrk (sbrk.c:56)
+   n1: 217088 0x4B52590: sbrk (sbrk.c:31)
+    n1: 217088 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 217088 0x4AD5574: sysmalloc (malloc.c:2470)
+      n1: 217088 0x4AD6792: _int_malloc (malloc.c:4141)
+       n0: 217088 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=1059518120
+mem_heap_B=13848576
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2115364022
+mem_heap_B=16998400
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2115642736
+mem_heap_B=16998400
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n5: 16998400 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 6299648 0x4B56B06: __mmap64 (mmap64.c:59)
+  n1: 6299648 0x4B56B06: mmap (mmap64.c:47)
+   n1: 6299648 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 6299648 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 6299648 0x4AD8153: malloc (malloc.c:3058)
+      n1: 6299648 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 6299648 0x10B3B5: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+        n1: 6299648 0x10B23C: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+         n0: 6299648 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+ n0: 249856 0x0: ???
+ n1: 217088 0x4B524AB: brk (brk.c:31)
+  n1: 217088 0x4B52590: __sbrk (sbrk.c:56)
+   n1: 217088 0x4B52590: sbrk (sbrk.c:31)
+    n1: 217088 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 217088 0x4AD5574: sysmalloc (malloc.c:2470)
+      n1: 217088 0x4AD6792: _int_malloc (malloc.c:4141)
+       n0: 217088 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=2115642736
+mem_heap_B=16994304
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=4078558013
+mem_heap_B=15151104
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=4128307122
+mem_heap_B=15400960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=4230684420
+mem_heap_B=15900672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=4441195318
+mem_heap_B=16900096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=4873710182
+mem_heap_B=18903040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=4894710656
+mem_heap_B=18903040
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n5: 18903040 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 10231808 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 10231808 0x401F186: mmap (mmap64.c:47)
+   n1: 5517312 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 5517312 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 5517312 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 5496832 0x400F514: openaux (dl-deps.c:64)
+       n1: 5496832 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 5496832 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 5496832 0x4004063: dl_main (rtld.c:1805)
+          n1: 5496832 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 5496832 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 5496832 0x400204B: _dl_start (rtld.c:539)
+             n0: 5496832 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 4661248 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 4661248 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 4661248 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 4644864 0x400F514: openaux (dl-deps.c:64)
+       n1: 4644864 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 4644864 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 4644864 0x4004063: dl_main (rtld.c:1805)
+          n1: 4644864 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 4644864 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 4644864 0x400204B: _dl_start (rtld.c:539)
+             n0: 4644864 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 53248 in 3 places, all below massif's threshold (1.00%)
+ n1: 4222976 0x4B524AB: brk (brk.c:31)
+  n1: 4222976 0x4B52590: __sbrk (sbrk.c:56)
+   n1: 4222976 0x4B52590: sbrk (sbrk.c:31)
+    n1: 4222976 0x4ADAB8C: __default_morecore (morecore.c:47)
+     n1: 4222976 0x4AD5574: sysmalloc (malloc.c:2470)
+      n2: 4222976 0x4AD6792: _int_malloc (malloc.c:4141)
+       n1: 4087808 0x4AD8153: malloc (malloc.c:3058)
+        n2: 4087808 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n2: 4005888 0x10A8AE: merge(std::vector<int, std::allocator<int> >&, int, int, int) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+          n2: 2002944 0x10AAC6: mergeSort(std::vector<int, std::allocator<int> >&, int, int) [clone .part.0] (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+           n2: 1003520 0x10AAC6: mergeSort(std::vector<int, std::allocator<int> >&, int, int) [clone .part.0] (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+            n2: 503808 0x10AAC6: mergeSort(std::vector<int, std::allocator<int> >&, int, int) [clone .part.0] (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+             n1: 253952 0x10AAC6: mergeSort(std::vector<int, std::allocator<int> >&, int, int) [clone .part.0] (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+              n1: 253952 0x10B253: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+               n0: 253952 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+             n1: 249856 0x10B253: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+              n0: 249856 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+            n1: 499712 0x10B253: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+             n0: 499712 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+           n1: 999424 0x10B253: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+            n0: 999424 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+          n1: 2002944 0x10B253: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+           n0: 2002944 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+         n0: 81920 in 1 place, below massif's threshold (1.00%)
+       n0: 135168 in 1 place, below massif's threshold (1.00%)
+ n1: 4198400 0x4B56B06: __mmap64 (mmap64.c:59)
+  n1: 4198400 0x4B56B06: mmap (mmap64.c:47)
+   n1: 4198400 0x4AD5978: sysmalloc (malloc.c:2310)
+    n1: 4198400 0x4AD6792: _int_malloc (malloc.c:4141)
+     n1: 4198400 0x4AD8153: malloc (malloc.c:3058)
+      n1: 4198400 0x48EBB28: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 4198400 0x10B3B5: void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+        n1: 4198400 0x10B23C: readDataAndSort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+         n0: 4198400 0x10A6A0: main (in /workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting)
+ n0: 249856 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=4894710656
+mem_heap_B=18898944
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

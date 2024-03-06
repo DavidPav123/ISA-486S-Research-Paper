@@ -1,0 +1,1682 @@
+desc: --massif-out-file=/workspaces/ISA-486S-Research-Paper/Sorting/rust/Results/massif2.txt --pages-as-heap=yes
+cmd: /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=28672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=0
+mem_heap_B=315392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=0
+mem_heap_B=385024
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=0
+mem_heap_B=405504
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=0
+mem_heap_B=409600
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=0
+mem_heap_B=552960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=0
+mem_heap_B=585728
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=0
+mem_heap_B=593920
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=0
+mem_heap_B=598016
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=0
+mem_heap_B=602112
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n1: 602112 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 602112 0x0: ???
+#-----------
+snapshot=10
+#-----------
+time=0
+mem_heap_B=606208
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=0
+mem_heap_B=622592
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=0
+mem_heap_B=626688
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=0
+mem_heap_B=630784
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=0
+mem_heap_B=630784
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 630784 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 626688 0x0: ???
+ n0: 4096 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=0
+mem_heap_B=626688
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=0
+mem_heap_B=626688
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=59002
+mem_heap_B=647168
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=59078
+mem_heap_B=651264
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=59128
+mem_heap_B=655360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=59175
+mem_heap_B=663552
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=61953
+mem_heap_B=704512
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=64108
+mem_heap_B=712704
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=65004
+mem_heap_B=823296
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=65080
+mem_heap_B=897024
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 897024 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 626688 0x0: ???
+ n1: 270336 0x401F186: __mmap64 (mmap64.c:59)
+  n4: 270336 0x401F186: mmap (mmap64.c:47)
+   n1: 131072 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 131072 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 131072 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 110592 0x400F514: openaux (dl-deps.c:64)
+       n1: 110592 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 110592 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 110592 0x4004063: dl_main (rtld.c:1805)
+          n1: 110592 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 110592 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 110592 0x400204B: _dl_start (rtld.c:539)
+             n0: 110592 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 20480 0x40012E8: map_doit (rtld.c:609)
+       n1: 20480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 20480 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 20480 0x40024DF: do_preload (rtld.c:780)
+          n1: 20480 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 20480 0x40061CE: dl_main (rtld.c:1690)
+            n1: 20480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 20480 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 20480 0x400204B: _dl_start (rtld.c:539)
+               n0: 20480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 90112 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 90112 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 90112 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 73728 0x400F514: openaux (dl-deps.c:64)
+       n1: 73728 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 73728 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 73728 0x4004063: dl_main (rtld.c:1805)
+          n1: 73728 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 73728 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 73728 0x400204B: _dl_start (rtld.c:539)
+             n0: 73728 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 16384 0x40012E8: map_doit (rtld.c:609)
+       n1: 16384 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 16384 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 16384 0x40024DF: do_preload (rtld.c:780)
+          n1: 16384 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 16384 0x40061CE: dl_main (rtld.c:1690)
+            n1: 16384 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 16384 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 16384 0x400204B: _dl_start (rtld.c:539)
+               n0: 16384 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=65130
+mem_heap_B=913408
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=65177
+mem_heap_B=921600
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=69531
+mem_heap_B=1064960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=69588
+mem_heap_B=1134592
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=69638
+mem_heap_B=1159168
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=69685
+mem_heap_B=1167360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=70130
+mem_heap_B=1183744
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=74170
+mem_heap_B=1208320
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=74246
+mem_heap_B=1216512
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=74296
+mem_heap_B=1220608
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1220608 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n0: 626688 0x0: ???
+ n1: 593920 0x401F186: __mmap64 (mmap64.c:59)
+  n5: 593920 0x401F186: mmap (mmap64.c:47)
+   n1: 299008 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 299008 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 299008 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 278528 0x400F514: openaux (dl-deps.c:64)
+       n1: 278528 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 278528 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 278528 0x4004063: dl_main (rtld.c:1805)
+          n1: 278528 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 278528 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 278528 0x400204B: _dl_start (rtld.c:539)
+             n0: 278528 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 20480 0x40012E8: map_doit (rtld.c:609)
+       n1: 20480 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 20480 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 20480 0x40024DF: do_preload (rtld.c:780)
+          n1: 20480 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 20480 0x40061CE: dl_main (rtld.c:1690)
+            n1: 20480 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 20480 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 20480 0x400204B: _dl_start (rtld.c:539)
+               n0: 20480 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 229376 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 229376 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 229376 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 212992 0x400F514: openaux (dl-deps.c:64)
+       n1: 212992 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 212992 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 212992 0x4004063: dl_main (rtld.c:1805)
+          n1: 212992 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 212992 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 212992 0x400204B: _dl_start (rtld.c:539)
+             n0: 212992 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 16384 0x40012E8: map_doit (rtld.c:609)
+       n1: 16384 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 16384 0x401DD62: _dl_catch_error (dl-error-skeleton.c:227)
+         n1: 16384 0x40024DF: do_preload (rtld.c:780)
+          n1: 16384 0x40024DF: handle_preload_list (rtld.c:881)
+           n1: 16384 0x40061CE: dl_main (rtld.c:1690)
+            n1: 16384 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+             n1: 16384 0x400204B: _dl_start_final (rtld.c:449)
+              n1: 16384 0x400204B: _dl_start (rtld.c:539)
+               n0: 16384 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 40960 0x401297C: _dl_sysdep_read_whole_file (dl-misc.c:57)
+    n1: 40960 0x4019B67: _dl_load_cache_lookup (dl-cache.c:201)
+     n1: 40960 0x400A989: _dl_map_object (dl-load.c:2102)
+      n1: 40960 0x400F514: openaux (dl-deps.c:64)
+       n1: 40960 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 40960 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 40960 0x4004063: dl_main (rtld.c:1805)
+          n1: 40960 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 40960 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 40960 0x400204B: _dl_start (rtld.c:539)
+             n0: 40960 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n1: 16384 0x4007C22: _dl_map_segments (dl-map-segments.h:141)
+    n1: 16384 0x4007C22: _dl_map_object_from_fd (dl-load.c:1186)
+     n1: 16384 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 16384 0x400F514: openaux (dl-deps.c:64)
+       n1: 16384 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 16384 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 16384 0x4004063: dl_main (rtld.c:1805)
+          n1: 16384 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 16384 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 16384 0x400204B: _dl_start (rtld.c:539)
+             n0: 16384 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+   n0: 8192 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=74343
+mem_heap_B=1228800
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=79209
+mem_heap_B=3268608
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=79266
+mem_heap_B=4808704
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=79316
+mem_heap_B=5128192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=79363
+mem_heap_B=5152768
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=79682
+mem_heap_B=5169152
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=103888
+mem_heap_B=5177344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=278042
+mem_heap_B=5177344
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5177344 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4550656 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4550656 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 90112 in 3 places, all below massif's threshold (1.00%)
+ n0: 626688 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=278042
+mem_heap_B=5173248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=286025
+mem_heap_B=5148672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=361963
+mem_heap_B=5283840
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=18176847
+mem_heap_B=5419008
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=35682038
+mem_heap_B=5550080
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=70560970
+mem_heap_B=5812224
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=140318450
+mem_heap_B=6336512
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=279826136
+mem_heap_B=7385088
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=558844347
+mem_heap_B=9482240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1080609871
+mem_heap_B=9617408
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n6: 9617408 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n1: 4063232 0x49A4ECE: mremap (syscall-template.S:78)
+  n1: 4063232 0x491A5EA: mremap_chunk (malloc.c:2867)
+   n1: 4063232 0x491FF6F: realloc (malloc.c:3206)
+    n1: 4063232 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+     n1: 4063232 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+      n1: 4063232 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 4063232 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 4063232 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 4063232 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 4063232 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+           n1: 4063232 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+            n1: 4063232 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 4063232 0x12DDA0: {closure#2} (rt.rs:148)
+              n1: 4063232 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+               n1: 4063232 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                n1: 4063232 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 4063232 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 4063232 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n0: 626688 0x0: ???
+ n1: 270336 0x49994AB: brk (brk.c:31)
+  n1: 270336 0x4999590: __sbrk (sbrk.c:56)
+   n1: 270336 0x4999590: sbrk (sbrk.c:31)
+    n1: 270336 0x4921B8C: __default_morecore (morecore.c:47)
+     n1: 270336 0x491C574: sysmalloc (malloc.c:2470)
+      n2: 270336 0x491D792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x491D97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x491EC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x491EC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x491EC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x490792D: __fopen_internal (iofopen.c:65)
+            n1: 135168 0x490792D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+             n1: 135168 0x48664AA: pthread_getattr_np (pthread_getattr_np.c:81)
+              n1: 135168 0x12DCAD: get_stack_start (thread.rs:804)
+               n1: 135168 0x12DCAD: get_stack_start_aligned (thread.rs:821)
+                n1: 135168 0x12DCAD: init (thread.rs:853)
+                 n1: 135168 0x12DCAD: init (rt.rs:99)
+                  n1: 135168 0x12DCAD: {closure#1} (rt.rs:147)
+                   n1: 135168 0x12DCAD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:552)
+                    n1: 135168 0x12DCAD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:516)
+                     n1: 135168 0x12DCAD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                      n1: 135168 0x12DCAD: std::rt::lang_start_internal (rt.rs:147)
+                       n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 135168 0x491F153: malloc (malloc.c:3058)
+        n1: 135168 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 135168 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 135168 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+                n1: 135168 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+                 n1: 135168 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                  n1: 135168 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                   n1: 135168 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                    n1: 135168 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                     n1: 135168 0x12DDA0: {closure#2} (rt.rs:148)
+                      n1: 135168 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                       n1: 135168 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                        n1: 135168 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                         n1: 135168 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                          n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n1: 147456 0x499DB06: __mmap64 (mmap64.c:59)
+  n2: 147456 0x499DB06: mmap (mmap64.c:47)
+   n1: 135168 0x491C978: sysmalloc (malloc.c:2310)
+    n1: 135168 0x491D792: _int_malloc (malloc.c:4141)
+     n1: 135168 0x491DE5E: _int_realloc (malloc.c:4600)
+      n1: 135168 0x491FFB5: realloc (malloc.c:3226)
+       n1: 135168 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 135168 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 135168 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 135168 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 135168 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 135168 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 135168 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+              n1: 135168 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+               n1: 135168 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 135168 0x12DDA0: {closure#2} (rt.rs:148)
+                 n1: 135168 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                  n1: 135168 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                   n1: 135168 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 135168 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=1081328966
+mem_heap_B=9617408
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n6: 9617408 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n1: 4063232 0x49A4ECE: mremap (syscall-template.S:78)
+  n1: 4063232 0x491A5EA: mremap_chunk (malloc.c:2867)
+   n1: 4063232 0x491FF6F: realloc (malloc.c:3206)
+    n1: 4063232 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+     n1: 4063232 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+      n1: 4063232 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 4063232 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 4063232 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 4063232 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 4063232 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+           n1: 4063232 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+            n1: 4063232 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 4063232 0x12DDA0: {closure#2} (rt.rs:148)
+              n1: 4063232 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+               n1: 4063232 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                n1: 4063232 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 4063232 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 4063232 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n0: 626688 0x0: ???
+ n1: 270336 0x49994AB: brk (brk.c:31)
+  n1: 270336 0x4999590: __sbrk (sbrk.c:56)
+   n1: 270336 0x4999590: sbrk (sbrk.c:31)
+    n1: 270336 0x4921B8C: __default_morecore (morecore.c:47)
+     n1: 270336 0x491C574: sysmalloc (malloc.c:2470)
+      n2: 270336 0x491D792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x491D97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x491EC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x491EC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x491EC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x490792D: __fopen_internal (iofopen.c:65)
+            n1: 135168 0x490792D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+             n1: 135168 0x48664AA: pthread_getattr_np (pthread_getattr_np.c:81)
+              n1: 135168 0x12DCAD: get_stack_start (thread.rs:804)
+               n1: 135168 0x12DCAD: get_stack_start_aligned (thread.rs:821)
+                n1: 135168 0x12DCAD: init (thread.rs:853)
+                 n1: 135168 0x12DCAD: init (rt.rs:99)
+                  n1: 135168 0x12DCAD: {closure#1} (rt.rs:147)
+                   n1: 135168 0x12DCAD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:552)
+                    n1: 135168 0x12DCAD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:516)
+                     n1: 135168 0x12DCAD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                      n1: 135168 0x12DCAD: std::rt::lang_start_internal (rt.rs:147)
+                       n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 135168 0x491F153: malloc (malloc.c:3058)
+        n1: 135168 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 135168 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 135168 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 135168 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+                n1: 135168 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+                 n1: 135168 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                  n1: 135168 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                   n1: 135168 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                    n1: 135168 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                     n1: 135168 0x12DDA0: {closure#2} (rt.rs:148)
+                      n1: 135168 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                       n1: 135168 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                        n1: 135168 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                         n1: 135168 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                          n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n1: 147456 0x499DB06: __mmap64 (mmap64.c:59)
+  n2: 147456 0x499DB06: mmap (mmap64.c:47)
+   n1: 135168 0x491C978: sysmalloc (malloc.c:2310)
+    n1: 135168 0x491D792: _int_malloc (malloc.c:4141)
+     n1: 135168 0x491DE5E: _int_realloc (malloc.c:4600)
+      n1: 135168 0x491FFB5: realloc (malloc.c:3226)
+       n1: 135168 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 135168 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 135168 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 135168 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 135168 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 135168 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 135168 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+              n1: 135168 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+               n1: 135168 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 135168 0x12DDA0: {closure#2} (rt.rs:148)
+                 n1: 135168 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                  n1: 135168 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                   n1: 135168 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 135168 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=1081328966
+mem_heap_B=9613312
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1097486791
+mem_heap_B=9748480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1098924387
+mem_heap_B=9748480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n6: 9748480 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n1: 4063232 0x49A4ECE: mremap (syscall-template.S:78)
+  n1: 4063232 0x491A5EA: mremap_chunk (malloc.c:2867)
+   n1: 4063232 0x491FF6F: realloc (malloc.c:3206)
+    n1: 4063232 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+     n1: 4063232 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+      n1: 4063232 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 4063232 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 4063232 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 4063232 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 4063232 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+           n1: 4063232 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+            n1: 4063232 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 4063232 0x12DDA0: {closure#2} (rt.rs:148)
+              n1: 4063232 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+               n1: 4063232 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                n1: 4063232 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 4063232 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 4063232 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n0: 626688 0x0: ???
+ n1: 401408 0x499DB06: __mmap64 (mmap64.c:59)
+  n2: 401408 0x499DB06: mmap (mmap64.c:47)
+   n1: 389120 0x491C978: sysmalloc (malloc.c:2310)
+    n2: 389120 0x491D792: _int_malloc (malloc.c:4141)
+     n1: 253952 0x491F153: malloc (malloc.c:3058)
+      n1: 253952 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 253952 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 253952 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 253952 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 253952 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 253952 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 253952 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 253952 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 253952 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+               n1: 253952 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                n1: 253952 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                 n1: 253952 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                  n1: 253952 0x12DDA0: {closure#2} (rt.rs:148)
+                   n1: 253952 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                    n1: 253952 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                     n1: 253952 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                      n1: 253952 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                       n0: 253952 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+     n1: 135168 0x491DE5E: _int_realloc (malloc.c:4600)
+      n1: 135168 0x491FFB5: realloc (malloc.c:3226)
+       n1: 135168 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 135168 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 135168 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 135168 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 135168 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 135168 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 135168 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+              n1: 135168 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+               n1: 135168 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 135168 0x12DDA0: {closure#2} (rt.rs:148)
+                 n1: 135168 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                  n1: 135168 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                   n1: 135168 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 135168 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n1: 147456 0x49994AB: brk (brk.c:31)
+  n1: 147456 0x4999590: __sbrk (sbrk.c:56)
+   n1: 147456 0x4999590: sbrk (sbrk.c:31)
+    n1: 147456 0x4921B8C: __default_morecore (morecore.c:47)
+     n1: 147456 0x491C574: sysmalloc (malloc.c:2470)
+      n2: 147456 0x491D792: _int_malloc (malloc.c:4141)
+       n1: 135168 0x491D97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x491EC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x491EC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x491EC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x490792D: __fopen_internal (iofopen.c:65)
+            n1: 135168 0x490792D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+             n1: 135168 0x48664AA: pthread_getattr_np (pthread_getattr_np.c:81)
+              n1: 135168 0x12DCAD: get_stack_start (thread.rs:804)
+               n1: 135168 0x12DCAD: get_stack_start_aligned (thread.rs:821)
+                n1: 135168 0x12DCAD: init (thread.rs:853)
+                 n1: 135168 0x12DCAD: init (rt.rs:99)
+                  n1: 135168 0x12DCAD: {closure#1} (rt.rs:147)
+                   n1: 135168 0x12DCAD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:552)
+                    n1: 135168 0x12DCAD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:516)
+                     n1: 135168 0x12DCAD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                      n1: 135168 0x12DCAD: std::rt::lang_start_internal (rt.rs:147)
+                       n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=1098924387
+mem_heap_B=9744384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1131232756
+mem_heap_B=9744384
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1132670769
+mem_heap_B=10248192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1135545908
+mem_heap_B=10248192
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n6: 10248192 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n1: 4063232 0x49A4ECE: mremap (syscall-template.S:78)
+  n1: 4063232 0x491A5EA: mremap_chunk (malloc.c:2867)
+   n1: 4063232 0x491FF6F: realloc (malloc.c:3206)
+    n1: 4063232 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+     n1: 4063232 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+      n1: 4063232 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 4063232 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 4063232 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 4063232 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 4063232 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+           n1: 4063232 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+            n1: 4063232 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 4063232 0x12DDA0: {closure#2} (rt.rs:148)
+              n1: 4063232 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+               n1: 4063232 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                n1: 4063232 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 4063232 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 4063232 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n1: 651264 0x499DB06: __mmap64 (mmap64.c:59)
+  n2: 651264 0x499DB06: mmap (mmap64.c:47)
+   n1: 638976 0x491C978: sysmalloc (malloc.c:2310)
+    n2: 638976 0x491D792: _int_malloc (malloc.c:4141)
+     n1: 503808 0x491F153: malloc (malloc.c:3058)
+      n1: 503808 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 503808 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 503808 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n2: 503808 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 503808 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 503808 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 503808 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 503808 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+              n1: 503808 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+               n1: 503808 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                n1: 503808 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                 n1: 503808 0x12DDA0: {closure#2} (rt.rs:148)
+                  n1: 503808 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                   n1: 503808 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                    n1: 503808 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                     n1: 503808 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                      n0: 503808 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+     n1: 135168 0x491DE5E: _int_realloc (malloc.c:4600)
+      n1: 135168 0x491FFB5: realloc (malloc.c:3226)
+       n1: 135168 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 135168 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 135168 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 135168 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 135168 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 135168 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 135168 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+              n1: 135168 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+               n1: 135168 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 135168 0x12DDA0: {closure#2} (rt.rs:148)
+                 n1: 135168 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                  n1: 135168 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                   n1: 135168 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 135168 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n0: 626688 0x0: ???
+ n1: 397312 0x49994AB: brk (brk.c:31)
+  n1: 397312 0x4999590: __sbrk (sbrk.c:56)
+   n1: 397312 0x4999590: sbrk (sbrk.c:31)
+    n1: 397312 0x4921B8C: __default_morecore (morecore.c:47)
+     n1: 397312 0x491C574: sysmalloc (malloc.c:2470)
+      n2: 397312 0x491D792: _int_malloc (malloc.c:4141)
+       n1: 262144 0x491F153: malloc (malloc.c:3058)
+        n2: 262144 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 249856 0x1133F2: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 249856 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 249856 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 249856 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 249856 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 249856 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 249856 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+                n1: 249856 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 249856 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                  n1: 249856 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                   n1: 249856 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 249856 0x12DDA0: {closure#2} (rt.rs:148)
+                     n1: 249856 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                      n1: 249856 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                       n1: 249856 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 249856 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 249856 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n0: 12288 in 1 place, below massif's threshold (1.00%)
+       n1: 135168 0x491D97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x491EC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x491EC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x491EC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x490792D: __fopen_internal (iofopen.c:65)
+            n1: 135168 0x490792D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+             n1: 135168 0x48664AA: pthread_getattr_np (pthread_getattr_np.c:81)
+              n1: 135168 0x12DCAD: get_stack_start (thread.rs:804)
+               n1: 135168 0x12DCAD: get_stack_start_aligned (thread.rs:821)
+                n1: 135168 0x12DCAD: init (thread.rs:853)
+                 n1: 135168 0x12DCAD: init (rt.rs:99)
+                  n1: 135168 0x12DCAD: {closure#1} (rt.rs:147)
+                   n1: 135168 0x12DCAD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:552)
+                    n1: 135168 0x12DCAD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:516)
+                     n1: 135168 0x12DCAD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                      n1: 135168 0x12DCAD: std::rt::lang_start_internal (rt.rs:147)
+                       n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=1135545908
+mem_heap_B=10244096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1203048875
+mem_heap_B=9994240
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1205924405
+mem_heap_B=10997760
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1209940193
+mem_heap_B=10997760
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n6: 10997760 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n1: 4063232 0x49A4ECE: mremap (syscall-template.S:78)
+  n1: 4063232 0x491A5EA: mremap_chunk (malloc.c:2867)
+   n1: 4063232 0x491FF6F: realloc (malloc.c:3206)
+    n1: 4063232 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+     n1: 4063232 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+      n1: 4063232 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 4063232 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 4063232 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 4063232 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 4063232 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+           n1: 4063232 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+            n1: 4063232 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 4063232 0x12DDA0: {closure#2} (rt.rs:148)
+              n1: 4063232 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+               n1: 4063232 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                n1: 4063232 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 4063232 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 4063232 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n1: 1150976 0x499DB06: __mmap64 (mmap64.c:59)
+  n2: 1150976 0x499DB06: mmap (mmap64.c:47)
+   n1: 1138688 0x491C978: sysmalloc (malloc.c:2310)
+    n2: 1138688 0x491D792: _int_malloc (malloc.c:4141)
+     n1: 1003520 0x491F153: malloc (malloc.c:3058)
+      n1: 1003520 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 1003520 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n2: 1003520 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 1003520 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 1003520 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 1003520 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 1003520 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 1003520 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+              n1: 1003520 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+               n1: 1003520 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 1003520 0x12DDA0: {closure#2} (rt.rs:148)
+                 n1: 1003520 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                  n1: 1003520 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                   n1: 1003520 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 1003520 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 1003520 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+     n1: 135168 0x491DE5E: _int_realloc (malloc.c:4600)
+      n1: 135168 0x491FFB5: realloc (malloc.c:3226)
+       n1: 135168 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 135168 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 135168 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 135168 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 135168 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 135168 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 135168 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+              n1: 135168 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+               n1: 135168 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 135168 0x12DDA0: {closure#2} (rt.rs:148)
+                 n1: 135168 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                  n1: 135168 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                   n1: 135168 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 135168 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n1: 647168 0x49994AB: brk (brk.c:31)
+  n1: 647168 0x4999590: __sbrk (sbrk.c:56)
+   n1: 647168 0x4999590: sbrk (sbrk.c:31)
+    n1: 647168 0x4921B8C: __default_morecore (morecore.c:47)
+     n1: 647168 0x491C574: sysmalloc (malloc.c:2470)
+      n2: 647168 0x491D792: _int_malloc (malloc.c:4141)
+       n1: 512000 0x491F153: malloc (malloc.c:3058)
+        n2: 512000 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 499712 0x1133F2: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 499712 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n2: 499712 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 249856 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 249856 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 249856 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 249856 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+                n1: 249856 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 249856 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                  n1: 249856 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                   n1: 249856 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 249856 0x12DDA0: {closure#2} (rt.rs:148)
+                     n1: 249856 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                      n1: 249856 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                       n1: 249856 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 249856 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 249856 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 249856 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 249856 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 249856 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 249856 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                n1: 249856 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                 n1: 249856 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                  n1: 249856 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                   n1: 249856 0x12DDA0: {closure#2} (rt.rs:148)
+                    n1: 249856 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                     n1: 249856 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                      n1: 249856 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                       n1: 249856 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                        n0: 249856 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n0: 12288 in 1 place, below massif's threshold (1.00%)
+       n1: 135168 0x491D97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x491EC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x491EC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x491EC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x490792D: __fopen_internal (iofopen.c:65)
+            n1: 135168 0x490792D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+             n1: 135168 0x48664AA: pthread_getattr_np (pthread_getattr_np.c:81)
+              n1: 135168 0x12DCAD: get_stack_start (thread.rs:804)
+               n1: 135168 0x12DCAD: get_stack_start_aligned (thread.rs:821)
+                n1: 135168 0x12DCAD: init (thread.rs:853)
+                 n1: 135168 0x12DCAD: init (rt.rs:99)
+                  n1: 135168 0x12DCAD: {closure#1} (rt.rs:147)
+                   n1: 135168 0x12DCAD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:552)
+                    n1: 135168 0x12DCAD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:516)
+                     n1: 135168 0x12DCAD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                      n1: 135168 0x12DCAD: std::rt::lang_start_internal (rt.rs:147)
+                       n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n0: 626688 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=65
+#-----------
+time=1209940193
+mem_heap_B=10993664
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1350697126
+mem_heap_B=10493952
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1354713312
+mem_heap_B=12496896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1362744772
+mem_heap_B=12496896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n6: 12496896 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n1: 4063232 0x49A4ECE: mremap (syscall-template.S:78)
+  n1: 4063232 0x491A5EA: mremap_chunk (malloc.c:2867)
+   n1: 4063232 0x491FF6F: realloc (malloc.c:3206)
+    n1: 4063232 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+     n1: 4063232 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+      n1: 4063232 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 4063232 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 4063232 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 4063232 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 4063232 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+           n1: 4063232 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+            n1: 4063232 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 4063232 0x12DDA0: {closure#2} (rt.rs:148)
+              n1: 4063232 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+               n1: 4063232 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                n1: 4063232 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 4063232 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 4063232 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n1: 2150400 0x499DB06: __mmap64 (mmap64.c:59)
+  n2: 2150400 0x499DB06: mmap (mmap64.c:47)
+   n1: 2138112 0x491C978: sysmalloc (malloc.c:2310)
+    n2: 2138112 0x491D792: _int_malloc (malloc.c:4141)
+     n1: 2002944 0x491F153: malloc (malloc.c:3058)
+      n1: 2002944 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n2: 2002944 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 2002944 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 2002944 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 2002944 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 2002944 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+            n1: 2002944 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+             n1: 2002944 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+              n1: 2002944 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+               n1: 2002944 0x12DDA0: {closure#2} (rt.rs:148)
+                n1: 2002944 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                 n1: 2002944 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                  n1: 2002944 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                   n1: 2002944 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                    n0: 2002944 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+     n1: 135168 0x491DE5E: _int_realloc (malloc.c:4600)
+      n1: 135168 0x491FFB5: realloc (malloc.c:3226)
+       n1: 135168 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 135168 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 135168 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 135168 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 135168 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 135168 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+             n1: 135168 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+              n1: 135168 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+               n1: 135168 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                n1: 135168 0x12DDA0: {closure#2} (rt.rs:148)
+                 n1: 135168 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                  n1: 135168 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                   n1: 135168 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                    n1: 135168 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                     n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n1: 1146880 0x49994AB: brk (brk.c:31)
+  n1: 1146880 0x4999590: __sbrk (sbrk.c:56)
+   n1: 1146880 0x4999590: sbrk (sbrk.c:31)
+    n1: 1146880 0x4921B8C: __default_morecore (morecore.c:47)
+     n1: 1146880 0x491C574: sysmalloc (malloc.c:2470)
+      n2: 1146880 0x491D792: _int_malloc (malloc.c:4141)
+       n1: 1011712 0x491F153: malloc (malloc.c:3058)
+        n2: 1011712 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 999424 0x1133F2: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n2: 999424 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n2: 499712 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 249856 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 249856 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 249856 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 249856 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+                n1: 249856 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 249856 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                  n1: 249856 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                   n1: 249856 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 249856 0x12DDA0: {closure#2} (rt.rs:148)
+                     n1: 249856 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                      n1: 249856 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                       n1: 249856 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 249856 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 249856 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 249856 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 249856 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 249856 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 249856 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                n1: 249856 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                 n1: 249856 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                  n1: 249856 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                   n1: 249856 0x12DDA0: {closure#2} (rt.rs:148)
+                    n1: 249856 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                     n1: 249856 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                      n1: 249856 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                       n1: 249856 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                        n0: 249856 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 499712 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 499712 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 499712 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 499712 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+               n1: 499712 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                n1: 499712 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                 n1: 499712 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                  n1: 499712 0x12DDA0: {closure#2} (rt.rs:148)
+                   n1: 499712 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                    n1: 499712 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                     n1: 499712 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                      n1: 499712 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                       n0: 499712 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n0: 12288 in 1 place, below massif's threshold (1.00%)
+       n1: 135168 0x491D97A: tcache_init.part.0 (malloc.c:2982)
+        n1: 135168 0x491EC0D: tcache_init (malloc.c:2978)
+         n1: 135168 0x491EC0D: __libc_malloc (malloc.c:3044)
+          n1: 135168 0x491EC0D: malloc_hook_ini (hooks.c:32)
+           n1: 135168 0x490792D: __fopen_internal (iofopen.c:65)
+            n1: 135168 0x490792D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+             n1: 135168 0x48664AA: pthread_getattr_np (pthread_getattr_np.c:81)
+              n1: 135168 0x12DCAD: get_stack_start (thread.rs:804)
+               n1: 135168 0x12DCAD: get_stack_start_aligned (thread.rs:821)
+                n1: 135168 0x12DCAD: init (thread.rs:853)
+                 n1: 135168 0x12DCAD: init (rt.rs:99)
+                  n1: 135168 0x12DCAD: {closure#1} (rt.rs:147)
+                   n1: 135168 0x12DCAD: do_call<std::rt::lang_start_internal::{closure_env#1}, ()> (panicking.rs:552)
+                    n1: 135168 0x12DCAD: try<(), std::rt::lang_start_internal::{closure_env#1}> (panicking.rs:516)
+                     n1: 135168 0x12DCAD: catch_unwind<std::rt::lang_start_internal::{closure_env#1}, ()> (panic.rs:142)
+                      n1: 135168 0x12DCAD: std::rt::lang_start_internal (rt.rs:147)
+                       n0: 135168 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n0: 626688 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=1362744772
+mem_heap_B=12492800
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1652294773
+mem_heap_B=11493376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1660326545
+mem_heap_B=15495168
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1676389218
+mem_heap_B=15495168
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n6: 15495168 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4509696 0x401F186: __mmap64 (mmap64.c:59)
+  n3: 4509696 0x401F186: mmap (mmap64.c:47)
+   n1: 2338816 0x4007325: _dl_map_segments (dl-map-segments.h:56)
+    n1: 2338816 0x4007325: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2338816 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2318336 0x400F514: openaux (dl-deps.c:64)
+       n1: 2318336 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2318336 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2318336 0x4004063: dl_main (rtld.c:1805)
+          n1: 2318336 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2318336 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2318336 0x400204B: _dl_start (rtld.c:539)
+             n0: 2318336 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 20480 in 1 place, below massif's threshold (1.00%)
+   n1: 2121728 0x4007491: _dl_map_segments (dl-map-segments.h:94)
+    n1: 2121728 0x4007491: _dl_map_object_from_fd (dl-load.c:1186)
+     n2: 2121728 0x400A61A: _dl_map_object (dl-load.c:2236)
+      n1: 2105344 0x400F514: openaux (dl-deps.c:64)
+       n1: 2105344 0x401DCB9: _dl_catch_exception (dl-error-skeleton.c:208)
+        n1: 2105344 0x400F962: _dl_map_object_deps (dl-deps.c:248)
+         n1: 2105344 0x4004063: dl_main (rtld.c:1805)
+          n1: 2105344 0x401CC4A: _dl_sysdep_start (dl-sysdep.c:252)
+           n1: 2105344 0x400204B: _dl_start_final (rtld.c:449)
+            n1: 2105344 0x400204B: _dl_start (rtld.c:539)
+             n0: 2105344 0x4001107: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n0: 16384 in 1 place, below massif's threshold (1.00%)
+   n0: 49152 in 3 places, all below massif's threshold (1.00%)
+ n1: 4149248 0x499DB06: __mmap64 (mmap64.c:59)
+  n2: 4149248 0x499DB06: mmap (mmap64.c:47)
+   n1: 4136960 0x491C978: sysmalloc (malloc.c:2310)
+    n2: 4136960 0x491D792: _int_malloc (malloc.c:4141)
+     n1: 4001792 0x491F153: malloc (malloc.c:3058)
+      n2: 4001792 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 4001792 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 4001792 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 4001792 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 4001792 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+           n1: 4001792 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+            n1: 4001792 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+             n1: 4001792 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+              n1: 4001792 0x12DDA0: {closure#2} (rt.rs:148)
+               n1: 4001792 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                n1: 4001792 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                 n1: 4001792 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                  n1: 4001792 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                   n0: 4001792 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+     n0: 135168 in 1 place, below massif's threshold (1.00%)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n1: 4063232 0x49A4ECE: mremap (syscall-template.S:78)
+  n1: 4063232 0x491A5EA: mremap_chunk (malloc.c:2867)
+   n1: 4063232 0x491FF6F: realloc (malloc.c:3206)
+    n1: 4063232 0x113E21: _ZN5alloc7raw_vec11finish_grow17hc3f73a6513a1d2c4E.llvm.6913368454060166462 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+     n1: 4063232 0x113F01: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+      n1: 4063232 0x113805: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+       n1: 4063232 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+        n1: 4063232 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n1: 4063232 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+          n1: 4063232 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+           n1: 4063232 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+            n1: 4063232 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+             n1: 4063232 0x12DDA0: {closure#2} (rt.rs:148)
+              n1: 4063232 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+               n1: 4063232 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                n1: 4063232 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                 n1: 4063232 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                  n0: 4063232 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+ n1: 2146304 0x49994AB: brk (brk.c:31)
+  n1: 2146304 0x4999590: __sbrk (sbrk.c:56)
+   n1: 2146304 0x4999590: sbrk (sbrk.c:31)
+    n1: 2146304 0x4921B8C: __default_morecore (morecore.c:47)
+     n1: 2146304 0x491C574: sysmalloc (malloc.c:2470)
+      n2: 2146304 0x491D792: _int_malloc (malloc.c:4141)
+       n1: 2011136 0x491F153: malloc (malloc.c:3058)
+        n2: 2011136 0x11341F: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n2: 1998848 0x1133F2: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n2: 999424 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n2: 499712 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 249856 0x1133D6: rust::merge_sort (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 249856 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 249856 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 249856 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+                n1: 249856 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                 n1: 249856 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                  n1: 249856 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                   n1: 249856 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                    n1: 249856 0x12DDA0: {closure#2} (rt.rs:148)
+                     n1: 249856 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                      n1: 249856 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                       n1: 249856 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                        n1: 249856 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                         n0: 249856 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 249856 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 249856 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 249856 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+               n1: 249856 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+                n1: 249856 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                 n1: 249856 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                  n1: 249856 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                   n1: 249856 0x12DDA0: {closure#2} (rt.rs:148)
+                    n1: 249856 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                     n1: 249856 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                      n1: 249856 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                       n1: 249856 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                        n0: 249856 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 499712 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 499712 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 499712 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+              n1: 499712 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+               n1: 499712 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+                n1: 499712 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                 n1: 499712 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                  n1: 499712 0x12DDA0: {closure#2} (rt.rs:148)
+                   n1: 499712 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                    n1: 499712 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                     n1: 499712 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                      n1: 499712 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                       n0: 499712 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+          n1: 999424 0x1139AC: rust::main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+           n1: 999424 0x113F52: std::sys_common::backtrace::__rust_begin_short_backtrace (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+            n1: 999424 0x113F68: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h94c8722b5f2a57f7E.llvm.13940912184747227554 (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+             n1: 999424 0x12DDA0: call_once<(), (dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (function.rs:284)
+              n1: 999424 0x12DDA0: do_call<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panicking.rs:552)
+               n1: 999424 0x12DDA0: try<i32, &(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe)> (panicking.rs:516)
+                n1: 999424 0x12DDA0: catch_unwind<&(dyn core::ops::function::Fn<(), Output=i32> + core::marker::Sync + core::panic::unwind_safe::RefUnwindSafe), i32> (panic.rs:142)
+                 n1: 999424 0x12DDA0: {closure#2} (rt.rs:148)
+                  n1: 999424 0x12DDA0: do_call<std::rt::lang_start_internal::{closure_env#2}, isize> (panicking.rs:552)
+                   n1: 999424 0x12DDA0: try<isize, std::rt::lang_start_internal::{closure_env#2}> (panicking.rs:516)
+                    n1: 999424 0x12DDA0: catch_unwind<std::rt::lang_start_internal::{closure_env#2}, isize> (panic.rs:142)
+                     n1: 999424 0x12DDA0: std::rt::lang_start_internal (rt.rs:148)
+                      n0: 999424 0x113DE4: main (in /workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust)
+         n0: 12288 in 1 place, below massif's threshold (1.00%)
+       n0: 135168 in 1 place, below massif's threshold (1.00%)
+ n0: 626688 0x0: ???
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=73
+#-----------
+time=1676389218
+mem_heap_B=15491072
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1676389298
+mem_heap_B=11489280
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1676389544
+mem_heap_B=7290880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
