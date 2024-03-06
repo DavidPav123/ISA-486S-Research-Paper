@@ -4,7 +4,7 @@ from write_averages import write_averages
 
 paths = [
     [
-        "Concurrency/run.py",
+        "/workspaces/ISA-486S-Research-Paper/Sorting/C/Sorting",
         "/workspaces/ISA-486S-Research-Paper/Sorting/C/Results",
     ],
     [
