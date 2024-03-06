@@ -1,0 +1,35 @@
+real	0m1.975s
+user	0m0.776s
+sys	0m2.494s
+All tasks have been processed.
+Sum of user and sys time: 3.270s
+
+
+real	0m1.883s
+user	0m0.796s
+sys	0m2.440s
+All tasks have been processed.
+Sum of user and sys time: 3.236s
+
+
+real	0m1.699s
+user	0m0.621s
+sys	0m2.035s
+All tasks have been processed.
+Sum of user and sys time: 2.656s
+
+
+real	0m2.073s
+user	0m0.693s
+sys	0m3.014s
+All tasks have been processed.
+Sum of user and sys time: 3.707s
+
+
+real	0m1.866s
+user	0m0.685s
+sys	0m2.442s
+Sum of user and sys time: 3.127s
+
+
+Average of user and sys times across all outputs: 3.199s

@@ -1,0 +1,1757 @@
+desc: --massif-out-file=/workspaces/ISA-486S-Research-Paper/Concurrency/Java/Results/massif4.txt --pages-as-heap=yes
+cmd: java -cp /workspaces/ISA-486S-Research-Paper/Concurrency/Java/ Concurrent
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=4096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=445472
+mem_heap_B=31674368
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2440485
+mem_heap_B=31825920
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2766915
+mem_heap_B=241942528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=3499988
+mem_heap_B=241946624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=3897882
+mem_heap_B=242327552
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=4359836
+mem_heap_B=503689216
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=5035040
+mem_heap_B=504741888
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=5287872
+mem_heap_B=3033604096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=6227549
+mem_heap_B=3034656768
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=6514867
+mem_heap_B=4273963008
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=12133745
+mem_heap_B=4275011584
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=12572323
+mem_heap_B=4277182464
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4277182464 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4244946944 0x49AFB06: __mmap64 (mmap64.c:59)
+  n7: 4244946944 0x49AFB06: mmap (mmap64.c:47)
+   n1: 2080374784 0x5782221: os::pd_attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 2080374784 0x577BFFB: os::attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n1: 2080374784 0x5A7CF4A: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 2080374784 0x5A7D8BD: ReservedHeapSpace::try_reserve_range(char*, char*, unsigned long, char*, char*, unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 2080374784 0x5A7E1E6: ReservedHeapSpace::initialize_compressed_heap(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 2080374784 0x5A7E4D8: ReservedHeapSpace::ReservedHeapSpace(unsigned long, unsigned long, unsigned long, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 2080374784 0x5A263AF: Universe::reserve_heap(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 2080374784 0x52548EE: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 2080374784 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 2080374784 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 2080374784 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 2080374784 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 2080374784 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                n1: 2080374784 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 2080374784 0x4876608: start_thread (pthread_create.c:477)
+                  n0: 2080374784 0x49B6352: clone (clone.S:95)
+   n1: 1418620928 0x5781C2D: os::pd_reserve_memory(unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n2: 1418620928 0x577A57E: os::reserve_memory(unsigned long, bool, MEMFLAGS) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n3: 1384783872 0x5A7D08F: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 1090519040 0x5A7D465: ReservedSpace::ReservedSpace(unsigned long, unsigned long, unsigned long, char*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 1090519040 0x56F34A3: Metaspace::reserve_address_space_for_compressed_classes(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 1090519040 0x56F9BCF: MetaspaceShared::reserve_address_space_for_archives(FileMapInfo*, FileMapInfo*, bool, ReservedSpace&, ReservedSpace&, ReservedSpace&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 1090519040 0x56FB0D6: MetaspaceShared::map_archives(FileMapInfo*, FileMapInfo*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 1090519040 0x56FB7EE: MetaspaceShared::initialize_runtime_shared_and_meta_spaces() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 1090519040 0x56F4404: Metaspace::global_initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 1090519040 0x5A261BB: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 1090519040 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 1090519040 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 1090519040 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 1090519040 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 1090519040 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 1090519040 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 1090519040 0x49B6352: clone (clone.S:95)
+      n1: 251658240 0x5A7D5EE: ReservedCodeSpace::ReservedCodeSpace(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 251658240 0x50D05BE: CodeCache::initialize_heaps() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 251658240 0x50D0C74: CodeCache::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 251658240 0x5361827: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 251658240 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 251658240 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 251658240 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+             n1: 251658240 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+              n1: 251658240 0x4876608: start_thread (pthread_create.c:477)
+               n0: 251658240 0x49B6352: clone (clone.S:95)
+      n0: 42606592 in 2 places, all below massif's threshold (1.00%)
+     n0: 33837056 in 4 places, all below massif's threshold (1.00%)
+   n1: 268435456 0x492C3A6: new_heap (arena.c:488)
+    n1: 268435456 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 268435456 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 268435456 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 268435456 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 268435456 0x49311BD: tcache_init (malloc.c:2978)
+         n2: 268435456 0x49311BD: malloc (malloc.c:3044)
+          n1: 201326592 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 201326592 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 201326592 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 201326592 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 201326592 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 201326592 0x4876608: start_thread (pthread_create.c:477)
+                n0: 201326592 0x49B6352: clone (clone.S:95)
+          n1: 67108864 0x574A25E: NMTPreInitAllocation::do_alloc(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x577884F: os::malloc(unsigned long, MEMFLAGS, NativeCallStack const&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x4EBAF6F: AllocateHeap(unsigned long, MEMFLAGS, AllocFailStrategy::AllocFailEnum) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x5793E44: ostream_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x5A040B7: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x49B6352: clone (clone.S:95)
+   n1: 141856768 0x625071D: osSupport::map_memory(int, char const*, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+    n1: 141856768 0x624F9DB: ImageFileReader::open() [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+     n1: 141856768 0x624FC14: ImageFileReader::open(char const*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+      n1: 141856768 0x50A90AC: ClassLoader::lookup_vm_options() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 141856768 0x4ED8BF5: Arguments::parse(JavaVMInitArgs const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 141856768 0x5A04108: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 141856768 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 141856768 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+           n1: 141856768 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+            n1: 141856768 0x4876608: start_thread (pthread_create.c:477)
+             n0: 141856768 0x49B6352: clone (clone.S:95)
+   n1: 134701056 0x57811CD: os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 134701056 0x577A7AC: os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n2: 134701056 0x529A4DA: G1PageBasedVirtualSpace::commit(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 134184960 0x52B08EE: G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n2: 132120576 0x53409B4: HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 130023424 0x5342621: HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 130023424 0x534284D: HeapRegionManager::expand_by(unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 130023424 0x52547FE: G1CollectedHeap::expand(unsigned long, WorkerThreads*, double*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 130023424 0x5254E13: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 130023424 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 130023424 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 130023424 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 130023424 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 130023424 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 130023424 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 130023424 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 130023424 0x49B6352: clone (clone.S:95)
+        n0: 2097152 in 1 place, below massif's threshold (1.00%)
+       n0: 2064384 in 1 place, below massif's threshold (1.00%)
+      n0: 516096 in 1 place, below massif's threshold (1.00%)
+   n1: 134217728 0x492C362: new_heap (arena.c:477)
+    n1: 134217728 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 134217728 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 134217728 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 134217728 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 134217728 0x49311BD: tcache_init (malloc.c:2978)
+         n1: 134217728 0x49311BD: malloc (malloc.c:3044)
+          n1: 134217728 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 134217728 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 134217728 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 134217728 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 134217728 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 134217728 0x4876608: start_thread (pthread_create.c:477)
+                n0: 134217728 0x49B6352: clone (clone.S:95)
+   n0: 66740224 in 8 places, all below massif's threshold (1.00%)
+ n0: 32235520 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=12773725
+mem_heap_B=4278095872
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=13842987
+mem_heap_B=4279148544
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=13844460
+mem_heap_B=4413362176
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=21991732
+mem_heap_B=4346322944
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=22277892
+mem_heap_B=4481658880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=26669439
+mem_heap_B=4484698112
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=26877291
+mem_heap_B=4486492160
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4486492160 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4454256640 0x49AFB06: __mmap64 (mmap64.c:59)
+  n7: 4454256640 0x49AFB06: mmap (mmap64.c:47)
+   n1: 2080374784 0x5782221: os::pd_attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 2080374784 0x577BFFB: os::attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n1: 2080374784 0x5A7CF4A: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 2080374784 0x5A7D8BD: ReservedHeapSpace::try_reserve_range(char*, char*, unsigned long, char*, char*, unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 2080374784 0x5A7E1E6: ReservedHeapSpace::initialize_compressed_heap(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 2080374784 0x5A7E4D8: ReservedHeapSpace::ReservedHeapSpace(unsigned long, unsigned long, unsigned long, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 2080374784 0x5A263AF: Universe::reserve_heap(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 2080374784 0x52548EE: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 2080374784 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 2080374784 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 2080374784 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 2080374784 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 2080374784 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                n1: 2080374784 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 2080374784 0x4876608: start_thread (pthread_create.c:477)
+                  n0: 2080374784 0x49B6352: clone (clone.S:95)
+   n1: 1485729792 0x5781C2D: os::pd_reserve_memory(unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n2: 1485729792 0x577A57E: os::reserve_memory(unsigned long, bool, MEMFLAGS) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n3: 1451892736 0x5A7D08F: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 1157627904 0x5A7D465: ReservedSpace::ReservedSpace(unsigned long, unsigned long, unsigned long, char*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 1090519040 0x56F34A3: Metaspace::reserve_address_space_for_compressed_classes(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 1090519040 0x56F9BCF: MetaspaceShared::reserve_address_space_for_archives(FileMapInfo*, FileMapInfo*, bool, ReservedSpace&, ReservedSpace&, ReservedSpace&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 1090519040 0x56FB0D6: MetaspaceShared::map_archives(FileMapInfo*, FileMapInfo*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 1090519040 0x56FB7EE: MetaspaceShared::initialize_runtime_shared_and_meta_spaces() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 1090519040 0x56F4404: Metaspace::global_initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 1090519040 0x5A261BB: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 1090519040 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 1090519040 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 1090519040 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 1090519040 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 1090519040 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 1090519040 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 1090519040 0x49B6352: clone (clone.S:95)
+       n1: 67108864 0x5A7BD84: metaspace::VirtualSpaceNode::create_node(unsigned long, metaspace::CommitLimiter*, metaspace::AbstractCounter<unsigned long>*, metaspace::AbstractCounter<unsigned long>*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 67108864 0x5A7B2AA: metaspace::VirtualSpaceList::allocate_root_chunk() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 67108864 0x505132B: metaspace::ChunkManager::get_chunk_locked(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 67108864 0x5051416: metaspace::ChunkManager::get_chunk(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x56F5741: metaspace::MetaspaceArena::allocate_inner(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x56F59FA: metaspace::MetaspaceArena::allocate(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x56F4B49: Metaspace::allocate(ClassLoaderData*, unsigned long, MetaspaceObj::Type, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x55CE8A4: Klass::initialize_supers(Klass*, Array<InstanceKlass*>*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x4ED96F0: ArrayKlass::complete_create_array_klass(ArrayKlass*, Klass*, ModuleEntry*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x57528F5: ObjArrayKlass::allocate_objArray_klass(ClassLoaderData*, int, Klass*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                 n1: 67108864 0x5362686: InstanceKlass::array_klass(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                  n1: 67108864 0x5364479: InstanceKlass::allocate_objArray(int, int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                   n1: 67108864 0x503A928: CDSProtectionDomain::allocate_shared_jar_url_array(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                    n1: 67108864 0x56F92B7: MetaspaceShared::post_initialize(JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                     n1: 67108864 0x5A25F97: universe_post_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                      n1: 67108864 0x53618D3: init_globals2() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                       n1: 67108864 0x5A04306: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                        n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                         n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                          n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                           n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                            n0: 67108864 0x49B6352: clone (clone.S:95)
+      n1: 251658240 0x5A7D5EE: ReservedCodeSpace::ReservedCodeSpace(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 251658240 0x50D05BE: CodeCache::initialize_heaps() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 251658240 0x50D0C74: CodeCache::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 251658240 0x5361827: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 251658240 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 251658240 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 251658240 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+             n1: 251658240 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+              n1: 251658240 0x4876608: start_thread (pthread_create.c:477)
+               n0: 251658240 0x49B6352: clone (clone.S:95)
+      n0: 42606592 in 2 places, all below massif's threshold (1.00%)
+     n0: 33837056 in 4 places, all below massif's threshold (1.00%)
+   n1: 335544320 0x492C3A6: new_heap (arena.c:488)
+    n1: 335544320 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 335544320 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 335544320 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 335544320 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 335544320 0x49311BD: tcache_init (malloc.c:2978)
+         n2: 335544320 0x49311BD: malloc (malloc.c:3044)
+          n1: 268435456 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 268435456 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 268435456 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 268435456 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 268435456 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 268435456 0x4876608: start_thread (pthread_create.c:477)
+                n0: 268435456 0x49B6352: clone (clone.S:95)
+          n1: 67108864 0x574A25E: NMTPreInitAllocation::do_alloc(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x577884F: os::malloc(unsigned long, MEMFLAGS, NativeCallStack const&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x4EBAF6F: AllocateHeap(unsigned long, MEMFLAGS, AllocFailStrategy::AllocFailEnum) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x5793E44: ostream_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x5A040B7: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x49B6352: clone (clone.S:95)
+   n1: 201326592 0x492C362: new_heap (arena.c:477)
+    n1: 201326592 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 201326592 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 201326592 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 201326592 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 201326592 0x49311BD: tcache_init (malloc.c:2978)
+         n1: 201326592 0x49311BD: malloc (malloc.c:3044)
+          n1: 201326592 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 201326592 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 201326592 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 201326592 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 201326592 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 201326592 0x4876608: start_thread (pthread_create.c:477)
+                n0: 201326592 0x49B6352: clone (clone.S:95)
+   n1: 141856768 0x625071D: osSupport::map_memory(int, char const*, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+    n1: 141856768 0x624F9DB: ImageFileReader::open() [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+     n1: 141856768 0x624FC14: ImageFileReader::open(char const*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+      n1: 141856768 0x50A90AC: ClassLoader::lookup_vm_options() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 141856768 0x4ED8BF5: Arguments::parse(JavaVMInitArgs const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 141856768 0x5A04108: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 141856768 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 141856768 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+           n1: 141856768 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+            n1: 141856768 0x4876608: start_thread (pthread_create.c:477)
+             n0: 141856768 0x49B6352: clone (clone.S:95)
+   n1: 134701056 0x57811CD: os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 134701056 0x577A7AC: os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n2: 134701056 0x529A4DA: G1PageBasedVirtualSpace::commit(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 134184960 0x52B08EE: G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n2: 132120576 0x53409B4: HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 130023424 0x5342621: HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 130023424 0x534284D: HeapRegionManager::expand_by(unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 130023424 0x52547FE: G1CollectedHeap::expand(unsigned long, WorkerThreads*, double*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 130023424 0x5254E13: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 130023424 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 130023424 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 130023424 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 130023424 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 130023424 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 130023424 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 130023424 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 130023424 0x49B6352: clone (clone.S:95)
+        n0: 2097152 in 1 place, below massif's threshold (1.00%)
+       n0: 2064384 in 1 place, below massif's threshold (1.00%)
+      n0: 516096 in 1 place, below massif's threshold (1.00%)
+   n0: 74723328 in 11 places, all below massif's threshold (1.00%)
+ n0: 32235520 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=35127949
+mem_heap_B=4487544832
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=35594964
+mem_heap_B=4622848000
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=35851936
+mem_heap_B=4962635776
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=peak
+n2: 4962635776 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4930400256 0x49AFB06: __mmap64 (mmap64.c:59)
+  n7: 4930400256 0x49AFB06: mmap (mmap64.c:47)
+   n1: 2080374784 0x5782221: os::pd_attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 2080374784 0x577BFFB: os::attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n1: 2080374784 0x5A7CF4A: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 2080374784 0x5A7D8BD: ReservedHeapSpace::try_reserve_range(char*, char*, unsigned long, char*, char*, unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 2080374784 0x5A7E1E6: ReservedHeapSpace::initialize_compressed_heap(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 2080374784 0x5A7E4D8: ReservedHeapSpace::ReservedHeapSpace(unsigned long, unsigned long, unsigned long, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 2080374784 0x5A263AF: Universe::reserve_heap(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 2080374784 0x52548EE: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 2080374784 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 2080374784 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 2080374784 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 2080374784 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 2080374784 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                n1: 2080374784 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 2080374784 0x4876608: start_thread (pthread_create.c:477)
+                  n0: 2080374784 0x49B6352: clone (clone.S:95)
+   n1: 1485729792 0x5781C2D: os::pd_reserve_memory(unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n2: 1485729792 0x577A57E: os::reserve_memory(unsigned long, bool, MEMFLAGS) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n3: 1451892736 0x5A7D08F: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 1157627904 0x5A7D465: ReservedSpace::ReservedSpace(unsigned long, unsigned long, unsigned long, char*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 1090519040 0x56F34A3: Metaspace::reserve_address_space_for_compressed_classes(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 1090519040 0x56F9BCF: MetaspaceShared::reserve_address_space_for_archives(FileMapInfo*, FileMapInfo*, bool, ReservedSpace&, ReservedSpace&, ReservedSpace&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 1090519040 0x56FB0D6: MetaspaceShared::map_archives(FileMapInfo*, FileMapInfo*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 1090519040 0x56FB7EE: MetaspaceShared::initialize_runtime_shared_and_meta_spaces() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 1090519040 0x56F4404: Metaspace::global_initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 1090519040 0x5A261BB: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 1090519040 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 1090519040 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 1090519040 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 1090519040 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 1090519040 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 1090519040 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 1090519040 0x49B6352: clone (clone.S:95)
+       n1: 67108864 0x5A7BD84: metaspace::VirtualSpaceNode::create_node(unsigned long, metaspace::CommitLimiter*, metaspace::AbstractCounter<unsigned long>*, metaspace::AbstractCounter<unsigned long>*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 67108864 0x5A7B2AA: metaspace::VirtualSpaceList::allocate_root_chunk() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 67108864 0x505132B: metaspace::ChunkManager::get_chunk_locked(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 67108864 0x5051416: metaspace::ChunkManager::get_chunk(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x56F5741: metaspace::MetaspaceArena::allocate_inner(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x56F59FA: metaspace::MetaspaceArena::allocate(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x56F4B49: Metaspace::allocate(ClassLoaderData*, unsigned long, MetaspaceObj::Type, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x55CE8A4: Klass::initialize_supers(Klass*, Array<InstanceKlass*>*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x4ED96F0: ArrayKlass::complete_create_array_klass(ArrayKlass*, Klass*, ModuleEntry*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x57528F5: ObjArrayKlass::allocate_objArray_klass(ClassLoaderData*, int, Klass*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                 n1: 67108864 0x5362686: InstanceKlass::array_klass(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                  n1: 67108864 0x5364479: InstanceKlass::allocate_objArray(int, int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                   n1: 67108864 0x503A928: CDSProtectionDomain::allocate_shared_jar_url_array(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                    n1: 67108864 0x56F92B7: MetaspaceShared::post_initialize(JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                     n1: 67108864 0x5A25F97: universe_post_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                      n1: 67108864 0x53618D3: init_globals2() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                       n1: 67108864 0x5A04306: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                        n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                         n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                          n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                           n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                            n0: 67108864 0x49B6352: clone (clone.S:95)
+      n1: 251658240 0x5A7D5EE: ReservedCodeSpace::ReservedCodeSpace(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 251658240 0x50D05BE: CodeCache::initialize_heaps() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 251658240 0x50D0C74: CodeCache::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 251658240 0x5361827: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 251658240 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 251658240 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 251658240 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+             n1: 251658240 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+              n1: 251658240 0x4876608: start_thread (pthread_create.c:477)
+               n0: 251658240 0x49B6352: clone (clone.S:95)
+      n0: 42606592 in 2 places, all below massif's threshold (1.00%)
+     n0: 33837056 in 4 places, all below massif's threshold (1.00%)
+   n1: 671088640 0x492C3A6: new_heap (arena.c:488)
+    n1: 671088640 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 671088640 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 671088640 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 671088640 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 671088640 0x49311BD: tcache_init (malloc.c:2978)
+         n2: 671088640 0x49311BD: malloc (malloc.c:3044)
+          n1: 603979776 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 603979776 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 603979776 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 603979776 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 603979776 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 603979776 0x4876608: start_thread (pthread_create.c:477)
+                n0: 603979776 0x49B6352: clone (clone.S:95)
+          n1: 67108864 0x574A25E: NMTPreInitAllocation::do_alloc(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x577884F: os::malloc(unsigned long, MEMFLAGS, NativeCallStack const&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x4EBAF6F: AllocateHeap(unsigned long, MEMFLAGS, AllocFailStrategy::AllocFailEnum) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x5793E44: ostream_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x5A040B7: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x49B6352: clone (clone.S:95)
+   n1: 335544320 0x492C362: new_heap (arena.c:477)
+    n1: 335544320 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 335544320 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 335544320 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 335544320 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 335544320 0x49311BD: tcache_init (malloc.c:2978)
+         n1: 335544320 0x49311BD: malloc (malloc.c:3044)
+          n1: 335544320 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 335544320 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 335544320 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 335544320 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 335544320 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 335544320 0x4876608: start_thread (pthread_create.c:477)
+                n0: 335544320 0x49B6352: clone (clone.S:95)
+   n1: 141856768 0x625071D: osSupport::map_memory(int, char const*, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+    n1: 141856768 0x624F9DB: ImageFileReader::open() [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+     n1: 141856768 0x624FC14: ImageFileReader::open(char const*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+      n1: 141856768 0x50A90AC: ClassLoader::lookup_vm_options() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 141856768 0x4ED8BF5: Arguments::parse(JavaVMInitArgs const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 141856768 0x5A04108: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 141856768 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 141856768 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+           n1: 141856768 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+            n1: 141856768 0x4876608: start_thread (pthread_create.c:477)
+             n0: 141856768 0x49B6352: clone (clone.S:95)
+   n1: 134701056 0x57811CD: os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 134701056 0x577A7AC: os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n2: 134701056 0x529A4DA: G1PageBasedVirtualSpace::commit(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 134184960 0x52B08EE: G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n2: 132120576 0x53409B4: HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 130023424 0x5342621: HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 130023424 0x534284D: HeapRegionManager::expand_by(unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 130023424 0x52547FE: G1CollectedHeap::expand(unsigned long, WorkerThreads*, double*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 130023424 0x5254E13: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 130023424 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 130023424 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 130023424 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 130023424 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 130023424 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 130023424 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 130023424 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 130023424 0x49B6352: clone (clone.S:95)
+        n0: 2097152 in 1 place, below massif's threshold (1.00%)
+       n0: 2064384 in 1 place, below massif's threshold (1.00%)
+      n0: 516096 in 1 place, below massif's threshold (1.00%)
+   n0: 81104896 in 11 places, all below massif's threshold (1.00%)
+ n0: 32235520 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=35906177
+mem_heap_B=4963721216
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=37912530
+mem_heap_B=4964573184
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=37912590
+mem_heap_B=4964581376
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=44486490
+mem_heap_B=4964597760
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=56474769
+mem_heap_B=4965650432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=57746337
+mem_heap_B=4965666816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4965666816 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4932571136 0x49AFB06: __mmap64 (mmap64.c:59)
+  n7: 4932571136 0x49AFB06: mmap (mmap64.c:47)
+   n1: 2080374784 0x5782221: os::pd_attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 2080374784 0x577BFFB: os::attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n1: 2080374784 0x5A7CF4A: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 2080374784 0x5A7D8BD: ReservedHeapSpace::try_reserve_range(char*, char*, unsigned long, char*, char*, unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 2080374784 0x5A7E1E6: ReservedHeapSpace::initialize_compressed_heap(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 2080374784 0x5A7E4D8: ReservedHeapSpace::ReservedHeapSpace(unsigned long, unsigned long, unsigned long, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 2080374784 0x5A263AF: Universe::reserve_heap(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 2080374784 0x52548EE: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 2080374784 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 2080374784 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 2080374784 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 2080374784 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 2080374784 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                n1: 2080374784 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 2080374784 0x4876608: start_thread (pthread_create.c:477)
+                  n0: 2080374784 0x49B6352: clone (clone.S:95)
+   n1: 1485729792 0x5781C2D: os::pd_reserve_memory(unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n2: 1485729792 0x577A57E: os::reserve_memory(unsigned long, bool, MEMFLAGS) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n3: 1451892736 0x5A7D08F: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 1157627904 0x5A7D465: ReservedSpace::ReservedSpace(unsigned long, unsigned long, unsigned long, char*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 1090519040 0x56F34A3: Metaspace::reserve_address_space_for_compressed_classes(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 1090519040 0x56F9BCF: MetaspaceShared::reserve_address_space_for_archives(FileMapInfo*, FileMapInfo*, bool, ReservedSpace&, ReservedSpace&, ReservedSpace&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 1090519040 0x56FB0D6: MetaspaceShared::map_archives(FileMapInfo*, FileMapInfo*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 1090519040 0x56FB7EE: MetaspaceShared::initialize_runtime_shared_and_meta_spaces() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 1090519040 0x56F4404: Metaspace::global_initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 1090519040 0x5A261BB: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 1090519040 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 1090519040 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 1090519040 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 1090519040 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 1090519040 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 1090519040 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 1090519040 0x49B6352: clone (clone.S:95)
+       n1: 67108864 0x5A7BD84: metaspace::VirtualSpaceNode::create_node(unsigned long, metaspace::CommitLimiter*, metaspace::AbstractCounter<unsigned long>*, metaspace::AbstractCounter<unsigned long>*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 67108864 0x5A7B2AA: metaspace::VirtualSpaceList::allocate_root_chunk() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 67108864 0x505132B: metaspace::ChunkManager::get_chunk_locked(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 67108864 0x5051416: metaspace::ChunkManager::get_chunk(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x56F5741: metaspace::MetaspaceArena::allocate_inner(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x56F59FA: metaspace::MetaspaceArena::allocate(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x56F4B49: Metaspace::allocate(ClassLoaderData*, unsigned long, MetaspaceObj::Type, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x55CE8A4: Klass::initialize_supers(Klass*, Array<InstanceKlass*>*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x4ED96F0: ArrayKlass::complete_create_array_klass(ArrayKlass*, Klass*, ModuleEntry*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x57528F5: ObjArrayKlass::allocate_objArray_klass(ClassLoaderData*, int, Klass*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                 n1: 67108864 0x5362686: InstanceKlass::array_klass(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                  n1: 67108864 0x5364479: InstanceKlass::allocate_objArray(int, int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                   n1: 67108864 0x503A928: CDSProtectionDomain::allocate_shared_jar_url_array(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                    n1: 67108864 0x56F92B7: MetaspaceShared::post_initialize(JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                     n1: 67108864 0x5A25F97: universe_post_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                      n1: 67108864 0x53618D3: init_globals2() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                       n1: 67108864 0x5A04306: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                        n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                         n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                          n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                           n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                            n0: 67108864 0x49B6352: clone (clone.S:95)
+      n1: 251658240 0x5A7D5EE: ReservedCodeSpace::ReservedCodeSpace(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 251658240 0x50D05BE: CodeCache::initialize_heaps() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 251658240 0x50D0C74: CodeCache::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 251658240 0x5361827: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 251658240 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 251658240 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 251658240 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+             n1: 251658240 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+              n1: 251658240 0x4876608: start_thread (pthread_create.c:477)
+               n0: 251658240 0x49B6352: clone (clone.S:95)
+      n0: 42606592 in 2 places, all below massif's threshold (1.00%)
+     n0: 33837056 in 4 places, all below massif's threshold (1.00%)
+   n1: 603979776 0x492C3A6: new_heap (arena.c:488)
+    n1: 603979776 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 603979776 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 603979776 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 603979776 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 603979776 0x49311BD: tcache_init (malloc.c:2978)
+         n2: 603979776 0x49311BD: malloc (malloc.c:3044)
+          n1: 536870912 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 536870912 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 536870912 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 536870912 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 536870912 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 536870912 0x4876608: start_thread (pthread_create.c:477)
+                n0: 536870912 0x49B6352: clone (clone.S:95)
+          n1: 67108864 0x574A25E: NMTPreInitAllocation::do_alloc(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x577884F: os::malloc(unsigned long, MEMFLAGS, NativeCallStack const&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x4EBAF6F: AllocateHeap(unsigned long, MEMFLAGS, AllocFailStrategy::AllocFailEnum) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x5793E44: ostream_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x5A040B7: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x49B6352: clone (clone.S:95)
+   n1: 402653184 0x492C362: new_heap (arena.c:477)
+    n1: 402653184 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 402653184 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 402653184 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 402653184 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 402653184 0x49311BD: tcache_init (malloc.c:2978)
+         n1: 402653184 0x49311BD: malloc (malloc.c:3044)
+          n1: 402653184 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 402653184 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 402653184 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 402653184 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 402653184 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 402653184 0x4876608: start_thread (pthread_create.c:477)
+                n0: 402653184 0x49B6352: clone (clone.S:95)
+   n1: 141856768 0x625071D: osSupport::map_memory(int, char const*, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+    n1: 141856768 0x624F9DB: ImageFileReader::open() [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+     n1: 141856768 0x624FC14: ImageFileReader::open(char const*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+      n1: 141856768 0x50A90AC: ClassLoader::lookup_vm_options() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 141856768 0x4ED8BF5: Arguments::parse(JavaVMInitArgs const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 141856768 0x5A04108: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 141856768 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 141856768 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+           n1: 141856768 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+            n1: 141856768 0x4876608: start_thread (pthread_create.c:477)
+             n0: 141856768 0x49B6352: clone (clone.S:95)
+   n1: 134701056 0x57811CD: os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 134701056 0x577A7AC: os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n2: 134701056 0x529A4DA: G1PageBasedVirtualSpace::commit(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 134184960 0x52B08EE: G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n2: 132120576 0x53409B4: HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 130023424 0x5342621: HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 130023424 0x534284D: HeapRegionManager::expand_by(unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 130023424 0x52547FE: G1CollectedHeap::expand(unsigned long, WorkerThreads*, double*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 130023424 0x5254E13: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 130023424 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 130023424 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 130023424 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 130023424 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 130023424 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 130023424 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 130023424 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 130023424 0x49B6352: clone (clone.S:95)
+        n0: 2097152 in 1 place, below massif's threshold (1.00%)
+       n0: 2064384 in 1 place, below massif's threshold (1.00%)
+      n0: 516096 in 1 place, below massif's threshold (1.00%)
+   n0: 83275776 in 11 places, all below massif's threshold (1.00%)
+ n0: 33095680 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=59069006
+mem_heap_B=4966719488
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=59917394
+mem_heap_B=4966785024
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=60045026
+mem_heap_B=4966850560
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=60773926
+mem_heap_B=4966916096
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=60967133
+mem_heap_B=4966932480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=157139080
+mem_heap_B=4967985152
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=507990968
+mem_heap_B=4969037824
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=508472221
+mem_heap_B=4970106880
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=508537163
+mem_heap_B=4971175936
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=509561424
+mem_heap_B=4971241472
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=510539149
+mem_heap_B=4972294144
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=510574953
+mem_heap_B=4972326912
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=668399271
+mem_heap_B=4972417024
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=668399331
+mem_heap_B=4972425216
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=670206342
+mem_heap_B=4972482560
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=670206402
+mem_heap_B=4972490752
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=673632302
+mem_heap_B=4972556288
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4972556288 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4939296768 0x49AFB06: __mmap64 (mmap64.c:59)
+  n7: 4939296768 0x49AFB06: mmap (mmap64.c:47)
+   n1: 2080374784 0x5782221: os::pd_attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 2080374784 0x577BFFB: os::attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n1: 2080374784 0x5A7CF4A: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 2080374784 0x5A7D8BD: ReservedHeapSpace::try_reserve_range(char*, char*, unsigned long, char*, char*, unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 2080374784 0x5A7E1E6: ReservedHeapSpace::initialize_compressed_heap(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 2080374784 0x5A7E4D8: ReservedHeapSpace::ReservedHeapSpace(unsigned long, unsigned long, unsigned long, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 2080374784 0x5A263AF: Universe::reserve_heap(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 2080374784 0x52548EE: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 2080374784 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 2080374784 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 2080374784 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 2080374784 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 2080374784 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                n1: 2080374784 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 2080374784 0x4876608: start_thread (pthread_create.c:477)
+                  n0: 2080374784 0x49B6352: clone (clone.S:95)
+   n1: 1485729792 0x5781C2D: os::pd_reserve_memory(unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n2: 1485729792 0x577A57E: os::reserve_memory(unsigned long, bool, MEMFLAGS) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n3: 1451892736 0x5A7D08F: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 1157627904 0x5A7D465: ReservedSpace::ReservedSpace(unsigned long, unsigned long, unsigned long, char*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 1090519040 0x56F34A3: Metaspace::reserve_address_space_for_compressed_classes(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 1090519040 0x56F9BCF: MetaspaceShared::reserve_address_space_for_archives(FileMapInfo*, FileMapInfo*, bool, ReservedSpace&, ReservedSpace&, ReservedSpace&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 1090519040 0x56FB0D6: MetaspaceShared::map_archives(FileMapInfo*, FileMapInfo*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 1090519040 0x56FB7EE: MetaspaceShared::initialize_runtime_shared_and_meta_spaces() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 1090519040 0x56F4404: Metaspace::global_initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 1090519040 0x5A261BB: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 1090519040 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 1090519040 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 1090519040 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 1090519040 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 1090519040 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 1090519040 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 1090519040 0x49B6352: clone (clone.S:95)
+       n1: 67108864 0x5A7BD84: metaspace::VirtualSpaceNode::create_node(unsigned long, metaspace::CommitLimiter*, metaspace::AbstractCounter<unsigned long>*, metaspace::AbstractCounter<unsigned long>*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 67108864 0x5A7B2AA: metaspace::VirtualSpaceList::allocate_root_chunk() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 67108864 0x505132B: metaspace::ChunkManager::get_chunk_locked(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 67108864 0x5051416: metaspace::ChunkManager::get_chunk(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x56F5741: metaspace::MetaspaceArena::allocate_inner(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x56F59FA: metaspace::MetaspaceArena::allocate(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x56F4B49: Metaspace::allocate(ClassLoaderData*, unsigned long, MetaspaceObj::Type, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x55CE8A4: Klass::initialize_supers(Klass*, Array<InstanceKlass*>*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x4ED96F0: ArrayKlass::complete_create_array_klass(ArrayKlass*, Klass*, ModuleEntry*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x57528F5: ObjArrayKlass::allocate_objArray_klass(ClassLoaderData*, int, Klass*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                 n1: 67108864 0x5362686: InstanceKlass::array_klass(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                  n1: 67108864 0x5364479: InstanceKlass::allocate_objArray(int, int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                   n1: 67108864 0x503A928: CDSProtectionDomain::allocate_shared_jar_url_array(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                    n1: 67108864 0x56F92B7: MetaspaceShared::post_initialize(JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                     n1: 67108864 0x5A25F97: universe_post_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                      n1: 67108864 0x53618D3: init_globals2() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                       n1: 67108864 0x5A04306: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                        n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                         n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                          n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                           n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                            n0: 67108864 0x49B6352: clone (clone.S:95)
+      n1: 251658240 0x5A7D5EE: ReservedCodeSpace::ReservedCodeSpace(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 251658240 0x50D05BE: CodeCache::initialize_heaps() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 251658240 0x50D0C74: CodeCache::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 251658240 0x5361827: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 251658240 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 251658240 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 251658240 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+             n1: 251658240 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+              n1: 251658240 0x4876608: start_thread (pthread_create.c:477)
+               n0: 251658240 0x49B6352: clone (clone.S:95)
+      n0: 42606592 in 2 places, all below massif's threshold (1.00%)
+     n0: 33837056 in 4 places, all below massif's threshold (1.00%)
+   n1: 603979776 0x492C3A6: new_heap (arena.c:488)
+    n1: 603979776 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 603979776 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 603979776 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 603979776 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 603979776 0x49311BD: tcache_init (malloc.c:2978)
+         n2: 603979776 0x49311BD: malloc (malloc.c:3044)
+          n1: 536870912 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 536870912 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 536870912 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 536870912 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 536870912 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 536870912 0x4876608: start_thread (pthread_create.c:477)
+                n0: 536870912 0x49B6352: clone (clone.S:95)
+          n1: 67108864 0x574A25E: NMTPreInitAllocation::do_alloc(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x577884F: os::malloc(unsigned long, MEMFLAGS, NativeCallStack const&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x4EBAF6F: AllocateHeap(unsigned long, MEMFLAGS, AllocFailStrategy::AllocFailEnum) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x5793E44: ostream_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x5A040B7: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x49B6352: clone (clone.S:95)
+   n1: 402653184 0x492C362: new_heap (arena.c:477)
+    n1: 402653184 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 402653184 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 402653184 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 402653184 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 402653184 0x49311BD: tcache_init (malloc.c:2978)
+         n1: 402653184 0x49311BD: malloc (malloc.c:3044)
+          n1: 402653184 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 402653184 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 402653184 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 402653184 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 402653184 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 402653184 0x4876608: start_thread (pthread_create.c:477)
+                n0: 402653184 0x49B6352: clone (clone.S:95)
+   n1: 141856768 0x625071D: osSupport::map_memory(int, char const*, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+    n1: 141856768 0x624F9DB: ImageFileReader::open() [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+     n1: 141856768 0x624FC14: ImageFileReader::open(char const*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+      n1: 141856768 0x50A90AC: ClassLoader::lookup_vm_options() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 141856768 0x4ED8BF5: Arguments::parse(JavaVMInitArgs const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 141856768 0x5A04108: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 141856768 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 141856768 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+           n1: 141856768 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+            n1: 141856768 0x4876608: start_thread (pthread_create.c:477)
+             n0: 141856768 0x49B6352: clone (clone.S:95)
+   n1: 134701056 0x57811CD: os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 134701056 0x577A7AC: os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n2: 134701056 0x529A4DA: G1PageBasedVirtualSpace::commit(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 134184960 0x52B08EE: G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n2: 132120576 0x53409B4: HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 130023424 0x5342621: HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 130023424 0x534284D: HeapRegionManager::expand_by(unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 130023424 0x52547FE: G1CollectedHeap::expand(unsigned long, WorkerThreads*, double*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 130023424 0x5254E13: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 130023424 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 130023424 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 130023424 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 130023424 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 130023424 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 130023424 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 130023424 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 130023424 0x49B6352: clone (clone.S:95)
+        n0: 2097152 in 1 place, below massif's threshold (1.00%)
+       n0: 2064384 in 1 place, below massif's threshold (1.00%)
+      n0: 516096 in 1 place, below massif's threshold (1.00%)
+   n0: 90001408 in 11 places, all below massif's threshold (1.00%)
+ n0: 33259520 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=709156255
+mem_heap_B=4972621824
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=785377858
+mem_heap_B=4972687360
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=952290786
+mem_heap_B=4972752896
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1142972453
+mem_heap_B=4972818432
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1199995691
+mem_heap_B=4972953600
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1210276835
+mem_heap_B=4973088768
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1212673928
+mem_heap_B=4973084672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1231513040
+mem_heap_B=4973338624
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1232438023
+mem_heap_B=4973334528
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1262160547
+mem_heap_B=4973387776
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4973387776 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4940128256 0x49AFB06: __mmap64 (mmap64.c:59)
+  n7: 4940128256 0x49AFB06: mmap (mmap64.c:47)
+   n1: 2080374784 0x5782221: os::pd_attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 2080374784 0x577BFFB: os::attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n1: 2080374784 0x5A7CF4A: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 2080374784 0x5A7D8BD: ReservedHeapSpace::try_reserve_range(char*, char*, unsigned long, char*, char*, unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 2080374784 0x5A7E1E6: ReservedHeapSpace::initialize_compressed_heap(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 2080374784 0x5A7E4D8: ReservedHeapSpace::ReservedHeapSpace(unsigned long, unsigned long, unsigned long, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 2080374784 0x5A263AF: Universe::reserve_heap(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 2080374784 0x52548EE: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 2080374784 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 2080374784 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 2080374784 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 2080374784 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 2080374784 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                n1: 2080374784 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 2080374784 0x4876608: start_thread (pthread_create.c:477)
+                  n0: 2080374784 0x49B6352: clone (clone.S:95)
+   n1: 1485729792 0x5781C2D: os::pd_reserve_memory(unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n2: 1485729792 0x577A57E: os::reserve_memory(unsigned long, bool, MEMFLAGS) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n3: 1451892736 0x5A7D08F: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 1157627904 0x5A7D465: ReservedSpace::ReservedSpace(unsigned long, unsigned long, unsigned long, char*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 1090519040 0x56F34A3: Metaspace::reserve_address_space_for_compressed_classes(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 1090519040 0x56F9BCF: MetaspaceShared::reserve_address_space_for_archives(FileMapInfo*, FileMapInfo*, bool, ReservedSpace&, ReservedSpace&, ReservedSpace&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 1090519040 0x56FB0D6: MetaspaceShared::map_archives(FileMapInfo*, FileMapInfo*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 1090519040 0x56FB7EE: MetaspaceShared::initialize_runtime_shared_and_meta_spaces() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 1090519040 0x56F4404: Metaspace::global_initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 1090519040 0x5A261BB: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 1090519040 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 1090519040 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 1090519040 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 1090519040 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 1090519040 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 1090519040 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 1090519040 0x49B6352: clone (clone.S:95)
+       n1: 67108864 0x5A7BD84: metaspace::VirtualSpaceNode::create_node(unsigned long, metaspace::CommitLimiter*, metaspace::AbstractCounter<unsigned long>*, metaspace::AbstractCounter<unsigned long>*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 67108864 0x5A7B2AA: metaspace::VirtualSpaceList::allocate_root_chunk() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 67108864 0x505132B: metaspace::ChunkManager::get_chunk_locked(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 67108864 0x5051416: metaspace::ChunkManager::get_chunk(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x56F5741: metaspace::MetaspaceArena::allocate_inner(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x56F59FA: metaspace::MetaspaceArena::allocate(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x56F4B49: Metaspace::allocate(ClassLoaderData*, unsigned long, MetaspaceObj::Type, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x55CE8A4: Klass::initialize_supers(Klass*, Array<InstanceKlass*>*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x4ED96F0: ArrayKlass::complete_create_array_klass(ArrayKlass*, Klass*, ModuleEntry*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x57528F5: ObjArrayKlass::allocate_objArray_klass(ClassLoaderData*, int, Klass*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                 n1: 67108864 0x5362686: InstanceKlass::array_klass(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                  n1: 67108864 0x5364479: InstanceKlass::allocate_objArray(int, int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                   n1: 67108864 0x503A928: CDSProtectionDomain::allocate_shared_jar_url_array(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                    n1: 67108864 0x56F92B7: MetaspaceShared::post_initialize(JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                     n1: 67108864 0x5A25F97: universe_post_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                      n1: 67108864 0x53618D3: init_globals2() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                       n1: 67108864 0x5A04306: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                        n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                         n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                          n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                           n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                            n0: 67108864 0x49B6352: clone (clone.S:95)
+      n1: 251658240 0x5A7D5EE: ReservedCodeSpace::ReservedCodeSpace(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 251658240 0x50D05BE: CodeCache::initialize_heaps() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 251658240 0x50D0C74: CodeCache::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 251658240 0x5361827: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 251658240 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 251658240 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 251658240 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+             n1: 251658240 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+              n1: 251658240 0x4876608: start_thread (pthread_create.c:477)
+               n0: 251658240 0x49B6352: clone (clone.S:95)
+      n0: 42606592 in 2 places, all below massif's threshold (1.00%)
+     n0: 33837056 in 4 places, all below massif's threshold (1.00%)
+   n1: 603979776 0x492C3A6: new_heap (arena.c:488)
+    n1: 603979776 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 603979776 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 603979776 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 603979776 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 603979776 0x49311BD: tcache_init (malloc.c:2978)
+         n2: 603979776 0x49311BD: malloc (malloc.c:3044)
+          n1: 536870912 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 536870912 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 536870912 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 536870912 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 536870912 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 536870912 0x4876608: start_thread (pthread_create.c:477)
+                n0: 536870912 0x49B6352: clone (clone.S:95)
+          n1: 67108864 0x574A25E: NMTPreInitAllocation::do_alloc(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x577884F: os::malloc(unsigned long, MEMFLAGS, NativeCallStack const&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x4EBAF6F: AllocateHeap(unsigned long, MEMFLAGS, AllocFailStrategy::AllocFailEnum) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x5793E44: ostream_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x5A040B7: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x49B6352: clone (clone.S:95)
+   n1: 402653184 0x492C362: new_heap (arena.c:477)
+    n1: 402653184 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 402653184 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 402653184 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 402653184 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 402653184 0x49311BD: tcache_init (malloc.c:2978)
+         n1: 402653184 0x49311BD: malloc (malloc.c:3044)
+          n1: 402653184 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 402653184 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 402653184 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 402653184 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 402653184 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 402653184 0x4876608: start_thread (pthread_create.c:477)
+                n0: 402653184 0x49B6352: clone (clone.S:95)
+   n1: 141856768 0x625071D: osSupport::map_memory(int, char const*, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+    n1: 141856768 0x624F9DB: ImageFileReader::open() [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+     n1: 141856768 0x624FC14: ImageFileReader::open(char const*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+      n1: 141856768 0x50A90AC: ClassLoader::lookup_vm_options() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 141856768 0x4ED8BF5: Arguments::parse(JavaVMInitArgs const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 141856768 0x5A04108: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 141856768 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 141856768 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+           n1: 141856768 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+            n1: 141856768 0x4876608: start_thread (pthread_create.c:477)
+             n0: 141856768 0x49B6352: clone (clone.S:95)
+   n1: 134701056 0x57811CD: os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 134701056 0x577A7AC: os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n2: 134701056 0x529A4DA: G1PageBasedVirtualSpace::commit(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 134184960 0x52B08EE: G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n2: 132120576 0x53409B4: HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 130023424 0x5342621: HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 130023424 0x534284D: HeapRegionManager::expand_by(unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 130023424 0x52547FE: G1CollectedHeap::expand(unsigned long, WorkerThreads*, double*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 130023424 0x5254E13: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 130023424 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 130023424 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 130023424 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 130023424 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 130023424 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 130023424 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 130023424 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 130023424 0x49B6352: clone (clone.S:95)
+        n0: 2097152 in 1 place, below massif's threshold (1.00%)
+       n0: 2064384 in 1 place, below massif's threshold (1.00%)
+      n0: 516096 in 1 place, below massif's threshold (1.00%)
+   n0: 90832896 in 11 places, all below massif's threshold (1.00%)
+ n0: 33259520 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=1263025252
+mem_heap_B=4973383680
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=1330154150
+mem_heap_B=4973965312
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1330154586
+mem_heap_B=4975030272
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1350745112
+mem_heap_B=4975026176
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1350745297
+mem_heap_B=4974014464
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1571498531
+mem_heap_B=4972949504
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2736514595
+mem_heap_B=4974395392
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2736516992
+mem_heap_B=4977405952
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2741229521
+mem_heap_B=4977446912
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=2741235436
+mem_heap_B=4977442816
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4977442816 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4944146432 0x49AFB06: __mmap64 (mmap64.c:59)
+  n7: 4944146432 0x49AFB06: mmap (mmap64.c:47)
+   n1: 2080374784 0x5782221: os::pd_attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 2080374784 0x577BFFB: os::attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n1: 2080374784 0x5A7CF4A: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 2080374784 0x5A7D8BD: ReservedHeapSpace::try_reserve_range(char*, char*, unsigned long, char*, char*, unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 2080374784 0x5A7E1E6: ReservedHeapSpace::initialize_compressed_heap(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 2080374784 0x5A7E4D8: ReservedHeapSpace::ReservedHeapSpace(unsigned long, unsigned long, unsigned long, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 2080374784 0x5A263AF: Universe::reserve_heap(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 2080374784 0x52548EE: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 2080374784 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 2080374784 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 2080374784 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 2080374784 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 2080374784 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                n1: 2080374784 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 2080374784 0x4876608: start_thread (pthread_create.c:477)
+                  n0: 2080374784 0x49B6352: clone (clone.S:95)
+   n1: 1485729792 0x5781C2D: os::pd_reserve_memory(unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n2: 1485729792 0x577A57E: os::reserve_memory(unsigned long, bool, MEMFLAGS) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n3: 1451892736 0x5A7D08F: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 1157627904 0x5A7D465: ReservedSpace::ReservedSpace(unsigned long, unsigned long, unsigned long, char*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 1090519040 0x56F34A3: Metaspace::reserve_address_space_for_compressed_classes(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 1090519040 0x56F9BCF: MetaspaceShared::reserve_address_space_for_archives(FileMapInfo*, FileMapInfo*, bool, ReservedSpace&, ReservedSpace&, ReservedSpace&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 1090519040 0x56FB0D6: MetaspaceShared::map_archives(FileMapInfo*, FileMapInfo*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 1090519040 0x56FB7EE: MetaspaceShared::initialize_runtime_shared_and_meta_spaces() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 1090519040 0x56F4404: Metaspace::global_initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 1090519040 0x5A261BB: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 1090519040 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 1090519040 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 1090519040 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 1090519040 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 1090519040 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 1090519040 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 1090519040 0x49B6352: clone (clone.S:95)
+       n1: 67108864 0x5A7BD84: metaspace::VirtualSpaceNode::create_node(unsigned long, metaspace::CommitLimiter*, metaspace::AbstractCounter<unsigned long>*, metaspace::AbstractCounter<unsigned long>*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 67108864 0x5A7B2AA: metaspace::VirtualSpaceList::allocate_root_chunk() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 67108864 0x505132B: metaspace::ChunkManager::get_chunk_locked(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 67108864 0x5051416: metaspace::ChunkManager::get_chunk(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x56F5741: metaspace::MetaspaceArena::allocate_inner(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x56F59FA: metaspace::MetaspaceArena::allocate(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x56F4B49: Metaspace::allocate(ClassLoaderData*, unsigned long, MetaspaceObj::Type, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x55CE8A4: Klass::initialize_supers(Klass*, Array<InstanceKlass*>*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x4ED96F0: ArrayKlass::complete_create_array_klass(ArrayKlass*, Klass*, ModuleEntry*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x57528F5: ObjArrayKlass::allocate_objArray_klass(ClassLoaderData*, int, Klass*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                 n1: 67108864 0x5362686: InstanceKlass::array_klass(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                  n1: 67108864 0x5364479: InstanceKlass::allocate_objArray(int, int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                   n1: 67108864 0x503A928: CDSProtectionDomain::allocate_shared_jar_url_array(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                    n1: 67108864 0x56F92B7: MetaspaceShared::post_initialize(JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                     n1: 67108864 0x5A25F97: universe_post_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                      n1: 67108864 0x53618D3: init_globals2() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                       n1: 67108864 0x5A04306: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                        n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                         n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                          n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                           n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                            n0: 67108864 0x49B6352: clone (clone.S:95)
+      n1: 251658240 0x5A7D5EE: ReservedCodeSpace::ReservedCodeSpace(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 251658240 0x50D05BE: CodeCache::initialize_heaps() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 251658240 0x50D0C74: CodeCache::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 251658240 0x5361827: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 251658240 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 251658240 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 251658240 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+             n1: 251658240 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+              n1: 251658240 0x4876608: start_thread (pthread_create.c:477)
+               n0: 251658240 0x49B6352: clone (clone.S:95)
+      n0: 42606592 in 2 places, all below massif's threshold (1.00%)
+     n0: 33837056 in 4 places, all below massif's threshold (1.00%)
+   n1: 603979776 0x492C3A6: new_heap (arena.c:488)
+    n1: 603979776 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 603979776 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 603979776 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 603979776 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 603979776 0x49311BD: tcache_init (malloc.c:2978)
+         n2: 603979776 0x49311BD: malloc (malloc.c:3044)
+          n1: 536870912 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 536870912 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 536870912 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 536870912 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 536870912 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 536870912 0x4876608: start_thread (pthread_create.c:477)
+                n0: 536870912 0x49B6352: clone (clone.S:95)
+          n1: 67108864 0x574A25E: NMTPreInitAllocation::do_alloc(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x577884F: os::malloc(unsigned long, MEMFLAGS, NativeCallStack const&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x4EBAF6F: AllocateHeap(unsigned long, MEMFLAGS, AllocFailStrategy::AllocFailEnum) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x5793E44: ostream_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x5A040B7: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x49B6352: clone (clone.S:95)
+   n1: 402653184 0x492C362: new_heap (arena.c:477)
+    n1: 402653184 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 402653184 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 402653184 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 402653184 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 402653184 0x49311BD: tcache_init (malloc.c:2978)
+         n1: 402653184 0x49311BD: malloc (malloc.c:3044)
+          n1: 402653184 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 402653184 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 402653184 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 402653184 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 402653184 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 402653184 0x4876608: start_thread (pthread_create.c:477)
+                n0: 402653184 0x49B6352: clone (clone.S:95)
+   n1: 141856768 0x625071D: osSupport::map_memory(int, char const*, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+    n1: 141856768 0x624F9DB: ImageFileReader::open() [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+     n1: 141856768 0x624FC14: ImageFileReader::open(char const*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+      n1: 141856768 0x50A90AC: ClassLoader::lookup_vm_options() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 141856768 0x4ED8BF5: Arguments::parse(JavaVMInitArgs const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 141856768 0x5A04108: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 141856768 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 141856768 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+           n1: 141856768 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+            n1: 141856768 0x4876608: start_thread (pthread_create.c:477)
+             n0: 141856768 0x49B6352: clone (clone.S:95)
+   n1: 134701056 0x57811CD: os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 134701056 0x577A7AC: os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n2: 134701056 0x529A4DA: G1PageBasedVirtualSpace::commit(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 134184960 0x52B08EE: G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n2: 132120576 0x53409B4: HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 130023424 0x5342621: HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 130023424 0x534284D: HeapRegionManager::expand_by(unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 130023424 0x52547FE: G1CollectedHeap::expand(unsigned long, WorkerThreads*, double*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 130023424 0x5254E13: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 130023424 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 130023424 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 130023424 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 130023424 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 130023424 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 130023424 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 130023424 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 130023424 0x49B6352: clone (clone.S:95)
+        n0: 2097152 in 1 place, below massif's threshold (1.00%)
+       n0: 2064384 in 1 place, below massif's threshold (1.00%)
+      n0: 516096 in 1 place, below massif's threshold (1.00%)
+   n0: 94851072 in 11 places, all below massif's threshold (1.00%)
+ n0: 33296384 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=2763087971
+mem_heap_B=4977401856
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2763089058
+mem_heap_B=4977197056
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2763090228
+mem_heap_B=4977192960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=2763091507
+mem_heap_B=4977188864
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=2763092785
+mem_heap_B=4975669248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=2763095017
+mem_heap_B=4975665152
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=2763096380
+mem_heap_B=4975661056
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=2763097712
+mem_heap_B=4975656960
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=2763099044
+mem_heap_B=4975652864
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=2763100376
+mem_heap_B=4975648768
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4975648768 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
+ n1: 4942389248 0x49AFB06: __mmap64 (mmap64.c:59)
+  n7: 4942389248 0x49AFB06: mmap (mmap64.c:47)
+   n1: 2080374784 0x5782221: os::pd_attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 2080374784 0x577BFFB: os::attempt_reserve_memory_at(char*, unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n1: 2080374784 0x5A7CF4A: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n1: 2080374784 0x5A7D8BD: ReservedHeapSpace::try_reserve_range(char*, char*, unsigned long, char*, char*, unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 2080374784 0x5A7E1E6: ReservedHeapSpace::initialize_compressed_heap(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 2080374784 0x5A7E4D8: ReservedHeapSpace::ReservedHeapSpace(unsigned long, unsigned long, unsigned long, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 2080374784 0x5A263AF: Universe::reserve_heap(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 2080374784 0x52548EE: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 2080374784 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 2080374784 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 2080374784 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 2080374784 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 2080374784 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                n1: 2080374784 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 2080374784 0x4876608: start_thread (pthread_create.c:477)
+                  n0: 2080374784 0x49B6352: clone (clone.S:95)
+   n1: 1485729792 0x5781C2D: os::pd_reserve_memory(unsigned long, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n2: 1485729792 0x577A57E: os::reserve_memory(unsigned long, bool, MEMFLAGS) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n3: 1451892736 0x5A7D08F: ReservedSpace::reserve(unsigned long, unsigned long, unsigned long, char*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 1157627904 0x5A7D465: ReservedSpace::ReservedSpace(unsigned long, unsigned long, unsigned long, char*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 1090519040 0x56F34A3: Metaspace::reserve_address_space_for_compressed_classes(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 1090519040 0x56F9BCF: MetaspaceShared::reserve_address_space_for_archives(FileMapInfo*, FileMapInfo*, bool, ReservedSpace&, ReservedSpace&, ReservedSpace&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 1090519040 0x56FB0D6: MetaspaceShared::map_archives(FileMapInfo*, FileMapInfo*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 1090519040 0x56FB7EE: MetaspaceShared::initialize_runtime_shared_and_meta_spaces() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 1090519040 0x56F4404: Metaspace::global_initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 1090519040 0x5A261BB: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 1090519040 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 1090519040 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 1090519040 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 1090519040 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 1090519040 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 1090519040 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 1090519040 0x49B6352: clone (clone.S:95)
+       n1: 67108864 0x5A7BD84: metaspace::VirtualSpaceNode::create_node(unsigned long, metaspace::CommitLimiter*, metaspace::AbstractCounter<unsigned long>*, metaspace::AbstractCounter<unsigned long>*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 67108864 0x5A7B2AA: metaspace::VirtualSpaceList::allocate_root_chunk() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 67108864 0x505132B: metaspace::ChunkManager::get_chunk_locked(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 67108864 0x5051416: metaspace::ChunkManager::get_chunk(signed char, signed char, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x56F5741: metaspace::MetaspaceArena::allocate_inner(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x56F59FA: metaspace::MetaspaceArena::allocate(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x56F4B49: Metaspace::allocate(ClassLoaderData*, unsigned long, MetaspaceObj::Type, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x55CE8A4: Klass::initialize_supers(Klass*, Array<InstanceKlass*>*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x4ED96F0: ArrayKlass::complete_create_array_klass(ArrayKlass*, Klass*, ModuleEntry*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x57528F5: ObjArrayKlass::allocate_objArray_klass(ClassLoaderData*, int, Klass*, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                 n1: 67108864 0x5362686: InstanceKlass::array_klass(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                  n1: 67108864 0x5364479: InstanceKlass::allocate_objArray(int, int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                   n1: 67108864 0x503A928: CDSProtectionDomain::allocate_shared_jar_url_array(int, JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                    n1: 67108864 0x56F92B7: MetaspaceShared::post_initialize(JavaThread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                     n1: 67108864 0x5A25F97: universe_post_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                      n1: 67108864 0x53618D3: init_globals2() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                       n1: 67108864 0x5A04306: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                        n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                         n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                          n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                           n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                            n0: 67108864 0x49B6352: clone (clone.S:95)
+      n1: 251658240 0x5A7D5EE: ReservedCodeSpace::ReservedCodeSpace(unsigned long, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 251658240 0x50D05BE: CodeCache::initialize_heaps() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 251658240 0x50D0C74: CodeCache::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 251658240 0x5361827: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 251658240 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 251658240 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 251658240 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+             n1: 251658240 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+              n1: 251658240 0x4876608: start_thread (pthread_create.c:477)
+               n0: 251658240 0x49B6352: clone (clone.S:95)
+      n0: 42606592 in 2 places, all below massif's threshold (1.00%)
+     n0: 33837056 in 4 places, all below massif's threshold (1.00%)
+   n1: 603979776 0x492C3A6: new_heap (arena.c:488)
+    n1: 603979776 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 603979776 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 603979776 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 603979776 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 603979776 0x49311BD: tcache_init (malloc.c:2978)
+         n2: 603979776 0x49311BD: malloc (malloc.c:3044)
+          n1: 536870912 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 536870912 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 536870912 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 536870912 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 536870912 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 536870912 0x4876608: start_thread (pthread_create.c:477)
+                n0: 536870912 0x49B6352: clone (clone.S:95)
+          n1: 67108864 0x574A25E: NMTPreInitAllocation::do_alloc(unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 67108864 0x577884F: os::malloc(unsigned long, MEMFLAGS, NativeCallStack const&) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 67108864 0x4EBAF6F: AllocateHeap(unsigned long, MEMFLAGS, AllocFailStrategy::AllocFailEnum) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 67108864 0x5793E44: ostream_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 67108864 0x5A040B7: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 67108864 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 67108864 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 67108864 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 67108864 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 67108864 0x49B6352: clone (clone.S:95)
+   n1: 402653184 0x492C362: new_heap (arena.c:477)
+    n1: 402653184 0x492CDCB: _int_new_arena (arena.c:693)
+     n1: 402653184 0x492CDCB: arena_get2.part.0 (arena.c:912)
+      n1: 402653184 0x492F9F8: arena_get2 (arena.c:880)
+       n1: 402653184 0x492F9F8: tcache_init.part.0 (malloc.c:2981)
+        n1: 402653184 0x49311BD: tcache_init (malloc.c:2978)
+         n1: 402653184 0x49311BD: malloc (malloc.c:3044)
+          n1: 402653184 0x48783F9: pthread_getattr_np (pthread_getattr_np.c:176)
+           n1: 402653184 0x577CF05: current_stack_region(unsigned char**, unsigned long*) [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 402653184 0x5782E58: os::current_stack_base() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 402653184 0x59F68F0: Thread::record_stack_base_and_size() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 402653184 0x5784424: thread_native_entry(Thread*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 402653184 0x4876608: start_thread (pthread_create.c:477)
+                n0: 402653184 0x49B6352: clone (clone.S:95)
+   n1: 141856768 0x625071D: osSupport::map_memory(int, char const*, unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+    n1: 141856768 0x624F9DB: ImageFileReader::open() [clone .part.0] (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+     n1: 141856768 0x624FC14: ImageFileReader::open(char const*, bool) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjimage.so)
+      n1: 141856768 0x50A90AC: ClassLoader::lookup_vm_options() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n1: 141856768 0x4ED8BF5: Arguments::parse(JavaVMInitArgs const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 141856768 0x5A04108: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 141856768 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 141856768 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+           n1: 141856768 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+            n1: 141856768 0x4876608: start_thread (pthread_create.c:477)
+             n0: 141856768 0x49B6352: clone (clone.S:95)
+   n1: 134701056 0x57811CD: os::pd_commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+    n1: 134701056 0x577A7AC: os::commit_memory_or_exit(char*, unsigned long, unsigned long, bool, char const*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+     n2: 134701056 0x529A4DA: G1PageBasedVirtualSpace::commit(unsigned long, unsigned long) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+      n2: 134184960 0x52B08EE: G1RegionsLargerThanCommitSizeMapper::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+       n2: 132120576 0x53409B4: HeapRegionManager::commit_regions(unsigned int, unsigned long, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+        n1: 130023424 0x5342621: HeapRegionManager::expand(unsigned int, unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+         n1: 130023424 0x534284D: HeapRegionManager::expand_by(unsigned int, WorkerThreads*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+          n1: 130023424 0x52547FE: G1CollectedHeap::expand(unsigned long, WorkerThreads*, double*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+           n1: 130023424 0x5254E13: G1CollectedHeap::initialize() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+            n1: 130023424 0x5A26165: universe_init() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+             n1: 130023424 0x5361836: init_globals() (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+              n1: 130023424 0x5A042C4: Threads::create_vm(JavaVMInitArgs*, bool*) (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+               n1: 130023424 0x54392DE: JNI_CreateJavaVM (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/server/libjvm.so)
+                n1: 130023424 0x48612CA: JavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                 n1: 130023424 0x4864E48: ThreadJavaMain (in /usr/local/sdkman/candidates/java/21.0.2-ms/lib/libjli.so)
+                  n1: 130023424 0x4876608: start_thread (pthread_create.c:477)
+                   n0: 130023424 0x49B6352: clone (clone.S:95)
+        n0: 2097152 in 1 place, below massif's threshold (1.00%)
+       n0: 2064384 in 1 place, below massif's threshold (1.00%)
+      n0: 516096 in 1 place, below massif's threshold (1.00%)
+   n0: 93093888 in 11 places, all below massif's threshold (1.00%)
+ n0: 33259520 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=2763101735
+mem_heap_B=4975644672
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=2763103067
+mem_heap_B=4975640576
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=2763103969
+mem_heap_B=4975636480
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=2763105937
+mem_heap_B=4972597248
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=2763114506
+mem_heap_B=4972568576
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

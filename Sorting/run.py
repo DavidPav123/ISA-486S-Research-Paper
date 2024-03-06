@@ -4,24 +4,8 @@ from write_averages import write_averages
 
 paths = [
     [
-        "Concurrency/run.py",
-        "/workspaces/ISA-486S-Research-Paper/Sorting/C/Results",
-    ],
-    [
-        "/workspaces/ISA-486S-Research-Paper/Sorting/C++/Sorting",
-        "/workspaces/ISA-486S-Research-Paper/Sorting/C++/Results",
-    ],
-    [
-        "/workspaces/ISA-486S-Research-Paper/Sorting/rust/target/release/rust",
-        "/workspaces/ISA-486S-Research-Paper/Sorting/rust/Results",
-    ],
-    [
-        "/workspaces/ISA-486S-Research-Paper/Sorting/spark/bin/spark",
-        "/workspaces/ISA-486S-Research-Paper/Sorting/spark/Results",
-    ],
-    [
-        "java -cp /workspaces/ISA-486S-Research-Paper/Sorting/Java/ Sorting",
-        "/workspaces/ISA-486S-Research-Paper/Sorting/Java/Results",
+        "java -cp /workspaces/ISA-486S-Research-Paper/Concurrency/Java/ Concurrent",
+        "/workspaces/ISA-486S-Research-Paper/Concurrency/Java/Results",
     ],
 ]
 for path in paths:
@@ -44,7 +28,7 @@ for path in paths:
     for i in range(5):
         print(f"Run {i}")
         subprocess.call(
-            f'valgrind --tool=massif --massif-out-file="{path[1]}/massif{i}.txt" --pages-as-heap=yes {path[0]}',
+            f'valgrind --tool=massif --massif-out-file="{path[1]}/massif{i}.txt" --pages-as-heap=yes {path[0]} 1> /dev/null',
             shell=True,
             executable="/bin/bash",
             stdout=subprocess.PIPE,
