@@ -1,7 +1,7 @@
 import random
 
 # Define the number of random numbers we want to generate
-num_random_numbers = 1_000_000
+num_random_numbers = 1_000
 
 # Define the range for the random numbers
 min_value = 1
