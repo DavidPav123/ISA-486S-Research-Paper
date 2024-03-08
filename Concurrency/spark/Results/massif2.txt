@@ -1,4 +1,4 @@
-desc: --massif-out-file=/workspaces/ISA-486S-Research-Paper/Concurrency/spark/Results/massif0.txt --pages-as-heap=yes
+desc: --massif-out-file=/workspaces/ISA-486S-Research-Paper/Concurrency/spark/Results/massif2.txt --pages-as-heap=yes
 cmd: /workspaces/ISA-486S-Research-Paper/Concurrency/spark/bin/spark
 time_unit: i
 #-----------
@@ -544,7 +544,7 @@ heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=460864
+time=461004
 mem_heap_B=13778944
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -552,7 +552,7 @@ heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=2238801
+time=2238832
 mem_heap_B=13967360
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -560,7 +560,7 @@ heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=7548788
+time=7548819
 mem_heap_B=14233600
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -568,7 +568,7 @@ heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=7680294
+time=7680325
 mem_heap_B=14233600
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -639,7 +639,7 @@ n5: 14233600 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=51
 #-----------
-time=7680294
+time=7680325
 mem_heap_B=14229504
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -647,7 +647,7 @@ heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=14627527
+time=14627558
 mem_heap_B=14635008
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -655,7 +655,7 @@ heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=14889926
+time=14889957
 mem_heap_B=14635008
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -718,7 +718,7 @@ n5: 14635008 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=54
 #-----------
-time=14889926
+time=14889957
 mem_heap_B=14630912
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -726,7 +726,7 @@ heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=28783885
+time=28783916
 mem_heap_B=15421440
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -734,7 +734,7 @@ heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=29308426
+time=29308457
 mem_heap_B=15421440
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -797,7 +797,7 @@ n5: 15421440 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=57
 #-----------
-time=29308426
+time=29308457
 mem_heap_B=15417344
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -805,7 +805,7 @@ heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=57096017
+time=57096048
 mem_heap_B=16994304
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -813,7 +813,7 @@ heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=57235536
+time=57235567
 mem_heap_B=16994304
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -876,7 +876,7 @@ n5: 16994304 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=60
 #-----------
-time=57235536
+time=57235567
 mem_heap_B=16990208
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -884,7 +884,7 @@ heap_tree=empty
 #-----------
 snapshot=61
 #-----------
-time=112810391
+time=112810422
 mem_heap_B=20140032
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -892,7 +892,7 @@ heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=113089174
+time=113089205
 mem_heap_B=20140032
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -948,7 +948,7 @@ n4: 20140032 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=63
 #-----------
-time=113089174
+time=113089205
 mem_heap_B=20135936
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -956,7 +956,7 @@ heap_tree=empty
 #-----------
 snapshot=64
 #-----------
-time=274286660965
+time=274286714458
 mem_heap_B=152256512
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -964,7 +964,7 @@ heap_tree=empty
 #-----------
 snapshot=65
 #-----------
-time=274286660984
+time=274286714477
 mem_heap_B=152256512
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -1033,7 +1033,7 @@ n3: 152256512 (page allocation syscalls) mmap/mremap/brk, --alloc-fns, etc.
 #-----------
 snapshot=66
 #-----------
-time=274286660984
+time=274286714477
 mem_heap_B=152252416
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -1041,7 +1041,7 @@ heap_tree=empty
 #-----------
 snapshot=67
 #-----------
-time=274286660995
+time=274286714488
 mem_heap_B=112738304
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -1049,7 +1049,7 @@ heap_tree=empty
 #-----------
 snapshot=68
 #-----------
-time=274286677938
+time=274286731431
 mem_heap_B=85143552
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -1057,7 +1057,7 @@ heap_tree=empty
 #-----------
 snapshot=69
 #-----------
-time=274286691892
+time=274286745385
 mem_heap_B=80945152
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -1065,7 +1065,7 @@ heap_tree=empty
 #-----------
 snapshot=70
 #-----------
-time=274286692341
+time=274286745834
 mem_heap_B=78811136
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -1073,7 +1073,7 @@ heap_tree=empty
 #-----------
 snapshot=71
 #-----------
-time=274286692790
+time=274286746283
 mem_heap_B=76677120
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -1081,7 +1081,7 @@ heap_tree=empty
 #-----------
 snapshot=72
 #-----------
-time=274286693239
+time=274286746732
 mem_heap_B=74543104
 mem_heap_extra_B=0
 mem_stacks_B=0
