@@ -4,8 +4,8 @@ from write_averages import write_averages
 
 paths = [
     [
-        "java -cp /workspaces/ISA-486S-Research-Paper/Concurrency/Java/ Concurrent",
-        "/workspaces/ISA-486S-Research-Paper/Concurrency/Java/Results",
+        "java -cp /workspaces/ISA-486S-Research-Paper/Sorting/Java/ Sorting",
+        "/workspaces/ISA-486S-Research-Paper/Sorting/Java/Results",
     ],
 ]
 for path in paths:
