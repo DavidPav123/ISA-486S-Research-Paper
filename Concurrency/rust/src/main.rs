@@ -21,7 +21,6 @@ fn worker(task_queue: Arc<Vec<Task>>, task_index: Arc<AtomicUsize>) {
         }
 
         // Simulate task processing by printing and modifying the task_number
-        // In a real application, ensure access to `task_queue[index]` is thread-safe or otherwise properly managed
         println!(
             "Thread {:?} processing task {}",
             thread::current().id(),
